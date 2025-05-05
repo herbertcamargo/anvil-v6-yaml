@@ -1,0 +1,1232 @@
+allow_embedding: false
+config:
+  client: {}
+  server: {}
+correct_dependency_ids: {dep_gqlhr7sei7ys7: dep_gqlhr7sei7ys7}
+db_schema:
+  users:
+    client: none
+    columns:
+    - admin_ui: {order: 0, width: 200}
+      name: email
+      type: string
+    - admin_ui: {order: 1, width: 200}
+      name: enabled
+      type: bool
+    - admin_ui: {order: 2, width: 200}
+      name: last_login
+      type: datetime
+    - admin_ui: {order: 3, width: 200}
+      name: password_hash
+      type: string
+    - admin_ui: {order: 4, width: 200}
+      name: n_password_failures
+      type: number
+    - admin_ui: {order: 5, width: 200}
+      name: confirmed_email
+      type: bool
+    - admin_ui: {order: 6, width: 200}
+      name: signed_up
+      type: datetime
+    - admin_ui: {order: 7, width: 200}
+      name: subscription
+      type: string
+    - admin_ui: {order: 8, width: 200}
+      name: cancel_subscription_at_period_end
+      type: bool
+    - admin_ui: {order: 9, width: 200}
+      name: stripe_id
+      type: string
+    - admin_ui: {order: 10, width: 200}
+      name: remembered_logins
+      type: simpleObject
+    - admin_ui: {order: -1, width: 200}
+      name: name
+      type: string
+    server: full
+    title: Users
+dependencies:
+- dep_id: dep_gqlhr7sei7ys7
+  resolution_hints: {app_id: 4UK6WHQ6UX7AKELK, name: Material 3 Theme 2.0, package_name: Material_3_Theme_2_0}
+  version: {version_tag: v1.2.3}
+dependency_code:
+  dep_gqlhr7sei7ys7:
+    config:
+      client: {}
+      server: {}
+    error: Permission denied when loading app dependency
+dependency_ids: {dep_gqlhr7sei7ys7: dep_gqlhr7sei7ys7}
+dependency_order: []
+exported_table_schema: []
+extra_files:
+  .gitattributes: IyBBdXRvIGRldGVjdCB0ZXh0IGZpbGVzIGFuZCBwZXJmb3JtIExGIG5vcm1hbGl6YXRpb24KKiB0ZXh0PWF1dG8K
+  .github:
+    ISSUE_TEMPLATE: {bug_report.md: LS0tCm5hbWU6IEJ1ZyByZXBvcnQKYWJvdXQ6IENyZWF0ZSBhIHJlcG9ydCB0byBoZWxwIHVzIGltcHJvdmUKdGl0bGU6ICcnCmxhYmVsczogJycKYXNzaWduZWVzOiAnJwoKLS0tCgoqKkRlc2NyaWJlIHRoZSBidWcqKgpBIGNsZWFyIGFuZCBjb25jaXNlIGRlc2NyaXB0aW9uIG9mIHdoYXQgdGhlIGJ1ZyBpcy4KCioqVG8gUmVwcm9kdWNlKioKU3RlcHMgdG8gcmVwcm9kdWNlIHRoZSBiZWhhdmlvcjoKMS4gR28gdG8gJy4uLicKMi4gQ2xpY2sgb24gJy4uLi4nCjMuIFNjcm9sbCBkb3duIHRvICcuLi4uJwo0LiBTZWUgZXJyb3IKCioqRXhwZWN0ZWQgYmVoYXZpb3IqKgpBIGNsZWFyIGFuZCBjb25jaXNlIGRlc2NyaXB0aW9uIG9mIHdoYXQgeW91IGV4cGVjdGVkIHRvIGhhcHBlbi4KCioqU2NyZWVuc2hvdHMqKgpJZiBhcHBsaWNhYmxlLCBhZGQgc2NyZWVuc2hvdHMgdG8gaGVscCBleHBsYWluIHlvdXIgcHJvYmxlbS4KCioqQWRkaXRpb25hbCBjb250ZXh0KioKQWRkIGFueSBvdGhlciBjb250ZXh0IGFib3V0IHRoZSBwcm9ibGVtIGhlcmUuCg==, feature_request.md: LS0tCm5hbWU6IEZlYXR1cmUgcmVxdWVzdAphYm91dDogU3VnZ2VzdCBhbiBpZGVhIGZvciB0aGlzIHByb2plY3QKdGl0bGU6ICcnCmxhYmVsczogJycKYXNzaWduZWVzOiAnJwoKLS0tCgoqKklzIHlvdXIgZmVhdHVyZSByZXF1ZXN0IHJlbGF0ZWQgdG8gYSBwcm9ibGVtPyBQbGVhc2UgZGVzY3JpYmUuKioKQSBjbGVhciBhbmQgY29uY2lzZSBkZXNjcmlwdGlvbiBvZiB3aGF0IHRoZSBwcm9ibGVtIGlzLiBFeC4gSSdtIGFsd2F5cyBmcnVzdHJhdGVkIHdoZW4gWy4uLl0KCioqRGVzY3JpYmUgdGhlIHNvbHV0aW9uIHlvdSdkIGxpa2UqKgpBIGNsZWFyIGFuZCBjb25jaXNlIGRlc2NyaXB0aW9uIG9mIHdoYXQgeW91IHdhbnQgdG8gaGFwcGVuLgoKKipEZXNjcmliZSBhbHRlcm5hdGl2ZXMgeW91J3ZlIGNvbnNpZGVyZWQqKgpBIGNsZWFyIGFuZCBjb25jaXNlIGRlc2NyaXB0aW9uIG9mIGFueSBhbHRlcm5hdGl2ZSBzb2x1dGlvbnMgb3IgZmVhdHVyZXMgeW91J3ZlIGNvbnNpZGVyZWQuCgoqKkFkZGl0aW9uYWwgY29udGV4dCoqCkFkZCBhbnkgb3RoZXIgY29udGV4dCBvciBzY3JlZW5zaG90cyBhYm91dCB0aGUgZmVhdHVyZSByZXF1ZXN0IGhlcmUuCg==}
+  LICENSE: TUlUIExpY2Vuc2UKCkNvcHlyaWdodCAoYykgMjAyNSBBbnZpbAoKUGVybWlzc2lvbiBpcyBoZXJlYnkgZ3JhbnRlZCwgZnJlZSBvZiBjaGFyZ2UsIHRvIGFueSBwZXJzb24gb2J0YWluaW5nIGEgY29weQpvZiB0aGlzIHNvZnR3YXJlIGFuZCBhc3NvY2lhdGVkIGRvY3VtZW50YXRpb24gZmlsZXMgKHRoZSAiU29mdHdhcmUiKSwgdG8gZGVhbAppbiB0aGUgU29mdHdhcmUgd2l0aG91dCByZXN0cmljdGlvbiwgaW5jbHVkaW5nIHdpdGhvdXQgbGltaXRhdGlvbiB0aGUgcmlnaHRzCnRvIHVzZSwgY29weSwgbW9kaWZ5LCBtZXJnZSwgcHVibGlzaCwgZGlzdHJpYnV0ZSwgc3VibGljZW5zZSwgYW5kL29yIHNlbGwKY29waWVzIG9mIHRoZSBTb2Z0d2FyZSwgYW5kIHRvIHBlcm1pdCBwZXJzb25zIHRvIHdob20gdGhlIFNvZnR3YXJlIGlzCmZ1cm5pc2hlZCB0byBkbyBzbywgc3ViamVjdCB0byB0aGUgZm9sbG93aW5nIGNvbmRpdGlvbnM6CgpUaGUgYWJvdmUgY29weXJpZ2h0IG5vdGljZSBhbmQgdGhpcyBwZXJtaXNzaW9uIG5vdGljZSBzaGFsbCBiZSBpbmNsdWRlZCBpbiBhbGwKY29waWVzIG9yIHN1YnN0YW50aWFsIHBvcnRpb25zIG9mIHRoZSBTb2Z0d2FyZS4KClRIRSBTT0ZUV0FSRSBJUyBQUk9WSURFRCAiQVMgSVMiLCBXSVRIT1VUIFdBUlJBTlRZIE9GIEFOWSBLSU5ELCBFWFBSRVNTIE9SCklNUExJRUQsIElOQ0xVRElORyBCVVQgTk9UIExJTUlURUQgVE8gVEhFIFdBUlJBTlRJRVMgT0YgTUVSQ0hBTlRBQklMSVRZLApGSVRORVNTIEZPUiBBIFBBUlRJQ1VMQVIgUFVSUE9TRSBBTkQgTk9OSU5GUklOR0VNRU5ULiBJTiBOTyBFVkVOVCBTSEFMTCBUSEUKQVVUSE9SUyBPUiBDT1BZUklHSFQgSE9MREVSUyBCRSBMSUFCTEUgRk9SIEFOWSBDTEFJTSwgREFNQUdFUyBPUiBPVEhFUgpMSUFCSUxJVFksIFdIRVRIRVIgSU4gQU4gQUNUSU9OIE9GIENPTlRSQUNULCBUT1JUIE9SIE9USEVSV0lTRSwgQVJJU0lORyBGUk9NLApPVVQgT0YgT1IgSU4gQ09OTkVDVElPTiBXSVRIIFRIRSBTT0ZUV0FSRSBPUiBUSEUgVVNFIE9SIE9USEVSIERFQUxJTkdTIElOIFRIRQpTT0ZUV0FSRS4K
+  README.md: IyBXZWxjb21lIHRvIEFudmlsJ3MgU2FhUyBUZW1wbGF0ZQoKW0FudmlsJ3MgU2FhUyAoU29mdHdhcmUgYXMgYSBTZXJ2aWNlKSB0ZW1wbGF0ZV0oaHR0cHM6Ly9hbnZpbC53b3Jrcy9idWlsZCNjbG9uZTpTVVRJQ0I2TkdWWk03SjVTPUNCM0RYUjdWNjVGWUw2VVFPRjJWUUY1TCkgaXMgYSBzb2xpZCBzdGFydGluZyBwb2ludCBhbmQgZm91bmRhdGlvbiBmb3IgeW91ciBzdWJzY3JpcHRpb24tYmFzZWQgU2FhUyBwcm9kdWN0LiBUaGlzIHRlbXBsYXRlIHVzZXMgW1N0cmlwZSdzXShodHRwczovL3N0cmlwZS5jb20pIEFQSSBmb3Igc3Vic2NyaXB0aW9uIG1hbmFnZW1lbnQsIGFuZCBpbmNsdWRlcyBzaW1wbGlmaWVkIHVzZXIgcGVybWlzc2lvbnMgZm9yIHlvdSB0byB1c2UgdGhyb3VnaG91dCB5b3VyIGFwcC4gSXQncyBhbiBpZGVhbCBzdGFydGluZyBwb2ludCBmb3IgeW91ciBwcm9qZWN0LgoKPiBbU3RyaXBlXShodHRwczovL3N0cmlwZS5jb20pIHByb3ZpZGVzIHRvb2xzIGZvciBidXNpbmVzc2VzIHRvIGFjY2VwdCwgbWFuYWdlLCBhbmQgcHJvY2VzcyBwYXltZW50cyBvbmxpbmUgYW5kIGluIHBlcnNvbiwgb2ZmZXJpbmcgZmVhdHVyZXMgbGlrZSBjdXN0b21pemFibGUgQVBJcywgZnJhdWQgcHJldmVudGlvbiwgc3Vic2NyaXB0aW9uIGJpbGxpbmcsIGFuZCBnbG9iYWwgY3VycmVuY3kgc3VwcG9ydC4KCiMjIENvbnRlbnRzCgpJbiB0aGlzIGd1aWRlLCB3ZeKAmWxsIHdhbGsgdGhyb3VnaCB0aGUga2V5IGNvbXBvbmVudHMgb2YgdGhlIHRlbXBsYXRlLCBjb3ZlcmluZzoKCi0gKipbSW50cm9kdWN0aW9uXSgjaW50cm9kdWN0aW9uKSoqOiBCcmllZmx5IGxlYXJuIGFib3V0IEFudmlsIGFuZCB0aGUgYmVuZWZpdHMgb2YgdXNpbmcgdGhpcyB0ZW1wbGF0ZS4KLSAqKltQcmVyZXF1aXNpdGVzXSgjcHJlcmVxdWlzaXRlcykqKjogV2hhdCB5b3XigJlsbCBuZWVkIHRvIGdldCBzdGFydGVkLgotICoqW1RlbXBsYXRlIFN0cnVjdHVyZV0oI3VuZGVyc3RhbmRpbmctdGhlLXRlbXBsYXRlcy1zdHJ1Y3R1cmUpKio6IEEgaGlnaC1sZXZlbCBvdmVydmlldyBvZiB0aGUgYXBw4oCZcyBhcmNoaXRlY3R1cmUgYW5kIFN0cmlwZSBpbnRlZ3JhdGlvbi4KLSAqKltUZW1wbGF0ZSBTZXR1cF0oI3NldHRpbmctdXAtdGhlLXRlbXBsYXRlKSoqOiBTdGVwLWJ5LXN0ZXAgaW5zdHJ1Y3Rpb25zIHRvIGdldCB0aGUgdGVtcGxhdGUgdXAgYW5kIHJ1bm5pbmcgd2l0aCB5b3VyIGFjY291bnQuCi0gKipbVGVzdGluZyBUaGUgQXBwXSgjdGVzdGluZy10aGUtYXBwKSoqOiBUZXN0IHRoZSBpbnRlZ3JhdGlvbiBhbmQgZXhwbG9yZSB0aGUgdGVtcGxhdGXigJlzIGZ1bmN0aW9uYWxpdHkgZnJvbSBhIHVzZXLigJlzIHBlcnNwZWN0aXZlLiAKLSAqKltNYWtlIFRoZSBhcHAgWW91ciBPd25dKCNtYWtpbmctdGhlLWFwcC15b3VyLW93bikqKjogV2l0aCB0aGUgaW50ZWdyYXRpb24gc2V0IHVwLCBpdCdzIHRpbWUgdG8gbWFrZSB0aGUgYXBwIHlvdXIgb3duLgoKIyMgSW50cm9kdWN0aW9uCgojIyMgQW52aWwKCklmIHlvdSdyZSBuZXcgaGVyZSwgd2VsY29tZSEgW0FudmlsXSgvKSBpcyBhIHBsYXRmb3JtIGZvciBidWlsZGluZyBmdWxsLXN0YWNrIHdlYiBhcHBzIHdpdGggbm90aGluZyBidXQgUHl0aG9uLiBObyBuZWVkIHRvIHdyZXN0bGUgd2l0aCBKUywgSFRNTCwgQ1NTLCBQeXRob24sIFNRTCBhbmQgYWxsIHRoZWlyIGZyYW1ld29ya3Mg4oCTIGp1c3QgKipidWlsZCBpdCBhbGwgaW4gUHl0aG9uKiouCgpZb3UncmUgZ29pbmcgdG8gbmVlZCB0byBrbm93IHRoZSBiYXNpY3Mgb2YgQW52aWwgYmVmb3JlIHVzaW5nIHRoaXMgdGVtcGxhdGUsIHNvIEknZCByZWNvbW1lbmQgZm9sbG93aW5nIG91ciBbMTAtbWludXRlIGludHJvIHR1dG9yaWFsXShodHRwczovL2FudmlsLndvcmtzL2xlYXJuL3R1dG9yaWFscy9mZWVkYmFjay1mb3JtKS4gVGhpcyBzaG91bGQgZ2l2ZSB5b3UgZW5vdWdoIGtub3dsZWRnZSB0byBiZWdpbiB1c2luZyB0aGUgU2FhUyB0ZW1wbGF0ZS4KCiMjIyBXaHkgdXNlIEFudmlsJ3MgU2FhUyB0ZW1wbGF0ZT8KClRoaXMgdGVtcGxhdGUgaXMgYSBzb2xpZCBmb3VuZGF0aW9uIGZvciBidWlsZGluZyB5b3VyIG93biBTYWFTIGFwcC4gSXQgZ2l2ZXMgeW91OgoKLSBGdWxsIFtTdHJpcGVdKGh0dHBzOi8vc3RyaXBlLmNvbSkgcGF5bWVudCBhbmQgY2hlY2tvdXQKLSBTdWJzY3JpcHRpb24gbWFuYWdlbWVudCBzeW5jZWQgd2l0aCB0aGUgYXBwCi0gQWNjb3VudCBtYW5hZ2VtZW50IHN5bmNlZCB3aXRoIFN0cmlwZQotIEVhc3ktdG8tY29uZmlndXJlIHVzZXIgcGVybWlzc2lvbnMKCk92ZXJhbGwsIGl0J3MgYW4gaWRlYWwgc3RhcnRpbmcgcG9pbnQgZm9yIHlvdXIgcHJvamVjdC4KCiMjIFByZXJlcXVpc2l0ZXMKClRvIGZvbGxvdyB0aGlzIGd1aWRlIHlvdSB3aWxsIG5lZWQgdGhlIGZvbGxvd2luZzoKCjEuIEFuIHVuZGVyc3RhbmRpbmcgb2YgUHl0aG9uCjIuIEEgW1N0cmlwZSBhY2NvdW50XShodHRwczovL2Rhc2hib2FyZC5zdHJpcGUuY29tL2xvZ2luKQozLiBCYXNpYyBrbm93bGVkZ2Ugb2YgQW52aWwgKGEgZ3JlYXQgcGxhY2UgdG8gc3RhcnQgaXMgd2l0aCBBbnZpbCdzIFtGZWVkYmFjayBmb3JtIHR1dG9yaWFsXShodHRwczovL2FudmlsLndvcmtzL2xlYXJuL3R1dG9yaWFscy9mZWVkYmFjay1mb3JtKSkKCiMjIFVuZGVyc3RhbmRpbmcgdGhlIHRlbXBsYXRlJ3Mgc3RydWN0dXJlCgpUaGUgdGVtcGxhdGUgaXMgZGl2aWRlZCBpbnRvIHR3byBtYWluIHBhcnRzOiB0aGUgU3RyaXBlIGludGVncmF0aW9uIGFuZCB0aGUgQW52aWwgYXBwLiBTdHJpcGUgbWFuYWdlcyBwYXltZW50cywgc3Vic2NyaXB0aW9ucywgYW5kIGludm9pY2luZywgd2hpbGUgdGhlIEFudmlsIGFwcCBoYW5kbGVzIHVzZXIgYXV0aGVudGljYXRpb24gYW5kIHBlcm1pc3Npb25zLgoKVGhlIGFwcCByZWxpZXMgb24gdGhlIGZvbGxvd2luZyBTdHJpcGUgZmVhdHVyZXM6CgotIFtDdXN0b21lciBQb3J0YWxzXShodHRwczovL2RvY3Muc3RyaXBlLmNvbS9jdXN0b21lci1tYW5hZ2VtZW50KSAtIGFsbG93cyBvdXIgY3VzdG9tZXJzIHRvIHNlbGYtbWFuYWdlIHRoZWlyIHBheW1lbnQgZGV0YWlscywgaW52b2ljZXMsIGFuZCBzdWJzY3JpcHRpb25zIGluIG9uZSBwbGFjZS4KLSBbUHJpY2luZyBUYWJsZXNdKGh0dHBzOi8vZG9jcy5zdHJpcGUuY29tL3BheW1lbnRzL2NoZWNrb3V0L3ByaWNpbmctdGFibGUpIC0gZGlzcGxheXMgb3VyIHByaWNlcywgY29uZmlndXJlZCBlYXNpbHkgZnJvbSBvdXIgU3RyaXBlIGRhc2hib2FyZCBhbmQgdGFrZXMgdXNlcnMgaW50byBTdHJpcGVzIGNoZWNrb3V0IGZsb3cuCi0gW0FQSXNdKGh0dHBzOi8vZG9jcy5zdHJpcGUuY29tL2FwaSkgLSB0byBzZW5kIGRhdGEgYW5kIHJlcXVlc3RzIHRvIG91ciBTdHJpcGUgYWNjb3VudC4KICAtIFtSZXRyaWV2ZSBwcmljZSBsaXN0XShodHRwczovL2RvY3Muc3RyaXBlLmNvbS9hcGkvcHJpY2VzL2xpc3QpCiAgLSBbUmV0cmlldmUgYSBjdXN0b21lcl0oaHR0cHM6Ly9kb2NzLnN0cmlwZS5jb20vYXBpL2N1c3RvbWVycy9yZXRyaWV2ZSkKICAtIFtDYW5jZWwgYSBzdWJzY3JpcHRpb25dKGh0dHBzOi8vZG9jcy5zdHJpcGUuY29tL2FwaS9zdWJzY3JpcHRpb25zL2NhbmNlbCkKICAtIFtEZWxldGUgYSBjdXN0b21lcl0oaHR0cHM6Ly9kb2NzLnN0cmlwZS5jb20vYXBpL2N1c3RvbWVycy9kZWxldGUpCi0gW1dlYmhvb2tzXShodHRwczovL2RvY3Muc3RyaXBlLmNvbS93ZWJob29rcykgLSB0byBzZW5kIGRhdGEgdG8gb3VyIEFudmlsIGFwcCB3aGVuIGFuIGV2ZW50IGhhcHBlbnMgaW4gU3RyaXBlLgogIC0gYGN1c3RvbWVyLnN1YnNjcmlwdGlvbi51cGRhdGVkYAogIC0gYGN1c3RvbWVyLmNyZWF0ZWRgCgpIZXJlJ3MgYW4gQVBJIGZsb3cgdG8gaGVscCB2aXN1YWxpc2UgdGhlIGludGVncmF0aW9uOgoKPGltZyBzcmM9Imh0dHBzOi8vYW52aWwtd2Vic2l0ZS1zdGF0aWMuczMuZXUtd2VzdC0yLmFtYXpvbmF3cy5jb20vdGVtcGxhdGVzL3NhYXMtdGVtcGxhdGUvYXBpLWNhbGwtZGlhZ3JhbS5wbmciIHdpZHRoPSI3MDBweCIvPgoKQW5kIGhlcmUncyBhIHVzZXIgZmxvdyBkaWFncmFtIHRvIHZpc3VhbGlzZSB0aGUgZnVuY3Rpb25hbGl0eSBhdmFpbGFibGUgdG8gdGhlIGVuZCB1c2VyOgoKPGltZyBzcmM9Imh0dHBzOi8vYW52aWwtd2Vic2l0ZS1zdGF0aWMuczMuZXUtd2VzdC0yLmFtYXpvbmF3cy5jb20vdGVtcGxhdGVzL3NhYXMtdGVtcGxhdGUvdXNlci1mbG93LWRpYWdyYW0ucG5nIiB3aWR0aD0iNzAwcHgiLz4KCi0tLQoKIyMgU2V0dGluZyB1cCB0aGUgdGVtcGxhdGUKClRoaXMgc2VjdGlvbiB3aWxsIGd1aWRlIHlvdSB0aHJvdWdoIGdldHRpbmcgc3RhcnRlZCB3aXRoIHRoZSB0ZW1wbGF0ZSwgdW5kZXJzdGFuZGluZyBpdHMgZmVhdHVyZXMsIGFuZCBmdXJ0aGVyIGRldmVsb3BpbmcgaXQgdG8gc3VpdCB5b3VyIG5lZWRzLgogIApMZXQncyBnZXQgc3RhcnRlZCEKCiMjIyBTdGVwIDEgLSBDbG9uaW5nIFRoZSBUZW1wbGF0ZQoKU3RhcnQgYnkgY2xvbmluZyB0aGUgdGVtcGxhdGUgYXBwIHdpdGggdGhlIGZvbGxvd2luZyBsaW5rOgpodHRwczovL2FudmlsLndvcmtzL2J1aWxkI2Nsb25lOlNVVElDQjZOR1ZaTTdKNVM9Q0IzRFhSN1Y2NUZZTDZVUU9GMlZRRjVMCgojIyMgU3RlcCAyIC0gU3RyaXBlIEFjY291bnQgU2V0dXAKCk5leHQsIHdlJ2xsIHNldCB1cCBvdXIgU3RyaXBlIGFjY291bnQuIFtSZWdpc3RlciBmb3IgYSBTdHJpcGUgYWNjb3VudF0oaHR0cHM6Ly9kYXNoYm9hcmQuc3RyaXBlLmNvbS9sb2dpbikgYW5kIGxvZ2luLiBUaGVuIGVudGVyIHlvdXIgW2J1c2luZXNzIGRldGFpbHNdKGh0dHBzOi8vc3VwcG9ydC5zdHJpcGUuY29tL3F1ZXN0aW9ucy9idXNpbmVzcy1pbmZvcm1hdGlvbi1yZXF1aXJlbWVudHMtdG8tdXNlLXN0cmlwZT9sb2NhbGU9ZW4tR0IpIHRvIHN0YXJ0IGNhcHR1cmluZyByZWN1cnJpbmcgcmV2ZW51ZSAob3Igc2tpcCB0aGlzIHN0ZXAgaWYgeW91J3JlIG9ubHkgZ29pbmcgdG8gdXNlIFtTdHJpcGUncyB0ZXN0IG1vZGVdKGh0dHBzOi8vc3RyaXBlLmNvbS9kb2NzL3Rlc3QtbW9kZT9sb2NhbGU9ZW4tR0IpKS4gTGFzdGx5LCBhY3RpdmF0ZSBTdHJpcGUncyBbdGVzdCBtb2RlXShodHRwczovL3N0cmlwZS5jb20vZG9jcy90ZXN0LW1vZGU/bG9jYWxlPWVuLUdCKS4KCiMjIyBTdGVwIDMgLSBBZGQgVGhlIEFQSSBLZXkKCkZvciB0aGUgaW50ZWdyYXRpb24gdG8gd29yaywgd2UgbmVlZCB0byBhZGQgeW91ciBTdHJpcGUgQVBJIGtleSB0byB0aGUgYXBwLiBZb3UgY2FuIGZpbmQgeW91ciBrZXlzIGJ5IGNsaWNraW5nIG9uICJEZXZlbG9wZXJzIiwgb24gdGhlIGJvdHRvbSBsZWZ0IGNvcm5lciBvZiB0aGUgU3RyaXBlIGRhc2hib2FyZCwgYW5kIGdvaW5nIHRvIHRoZSBBUEkga2V5cyB0YWIuCgo8aW1nIHNyYz0iaHR0cHM6Ly9hbnZpbC13ZWJzaXRlLXN0YXRpYy5zMy5ldS13ZXN0LTIuYW1hem9uYXdzLmNvbS90ZW1wbGF0ZXMvc2Fhcy10ZW1wbGF0ZS9kZXZlbG9wZXJzLWJ1dHRvbi1zdHJpcGUucG5nIiB3aWR0aD0iNDAwcHgiLz4KCkNvcHkgeW91ciBbU3RyaXBlIGFjY291bnQncyBTZWNyZXQga2V5XShodHRwczovL3N0cmlwZS5jb20vZG9jcy9rZXlzKSBhbmQsIGluIHRoZSBTYWFTIHRlbXBsYXRlIGFwcCdzIFtBcHAgU2VjcmV0c10oaHR0cHM6Ly9hbnZpbC53b3Jrcy9kb2NzL3NlY3VyaXR5L2VuY3J5cHRpbmctc2VjcmV0LWRhdGEpLCBzZXQgdGhlIHZhbHVlIG9mICJzdHJpcGVcX3Rlc3RcX2FwaVxfa2V5IiB0byB5b3VyIGtleS4KCjxpbWcgc3JjPSJodHRwczovL2FudmlsLXdlYnNpdGUtc3RhdGljLnMzLmV1LXdlc3QtMi5hbWF6b25hd3MuY29tL3RlbXBsYXRlcy9zYWFzLXRlbXBsYXRlL2FwcC1zZWNyZXRzLWxvY2F0aW9uLnBuZyIgd2lkdGg9IjQ1MHB4Ii8+CgojIyMgU3RlcCA0IC0gQ3JlYXRpbmcgQSBQcmljaW5nIFRhYmxlCgpOZXh0LCB3ZSBuZWVkIHRvIGNyZWF0ZSBhIHByaWNpbmcgdGFibGUgZm9yIG91ciBjdXN0b21lcnMgdG8gdXNlLiBTdGFydCBpbiB0aGUgQW52aWwgYXBwIGVkaXRvciwgW3B1Ymxpc2ggdGhpcyBhcHBdKGh0dHBzOi8vYW52aWwud29ya3MvZG9jcy9kZXBsb3ltZW50LW5ldy1pZGUvcXVpY2tzdGFydCkgYW5kIHRha2UgYSBjb3B5IG9mIHRoZSBVUkwgLSB3ZSdsbCB1c2UgdGhpcyBpbiBsYXRlciBpbiB0aGlzIHN0ZXAuCgpJbiB0aGUgU3RyaXBlIGRhc2hib2FyZCwgW25hdmlnYXRlIHRvIHRoZSBQcm9kdWN0cyBjYXRhbG9ndWVdKGh0dHBzOi8vZGFzaGJvYXJkLnN0cmlwZS5jb20vdGVzdC9wcm9kdWN0cz9hY3RpdmU9dHJ1ZSksIHNlbGVjdCB0aGUgW1ByaWNpbmcgdGFibGVzIHRhYl0oaHR0cHM6Ly9kYXNoYm9hcmQuc3RyaXBlLmNvbS90ZXN0L3ByaWNpbmctdGFibGVzKSwgYW5kIGNyZWF0ZSBhIFtwcmljaW5nIHRhYmxlXShodHRwczovL3N0cmlwZS5jb20vZG9jcy9wYXltZW50cy9jaGVja291dC9wcmljaW5nLXRhYmxlKS4KCjEuIENsaWNrIG9uIHRoZSB0ZXh0Ym94IHVuZGVyICJQcm9kdWN0cyIgYW5kIHNlbGVjdCAiQWRkIG5ldyBwcm9kdWN0Ii4gPGltZyBzcmM9Imh0dHBzOi8vYW52aWwtd2Vic2l0ZS1zdGF0aWMuczMuZXUtd2VzdC0yLmFtYXpvbmF3cy5jb20vdGVtcGxhdGVzL3NhYXMtdGVtcGxhdGUvYWRkLWEtcHJvZHVjdC5wbmciIHdpZHRoPSI2MDBweCIvPgo0LiBOYW1lIHlvdXIgcHJvZHVjdCAnUGVyc29uYWwnLCBnaXZlIGl0IGEgW3ByaWNlXShodHRwczovL3N0cmlwZS5jb20vZG9jcy9wcm9kdWN0cy1wcmljZXMvaG93LXByb2R1Y3RzLWFuZC1wcmljZXMtd29yayN3aGF0LWlzLWEtcHJpY2UpIGFuZCBzYXZlIGl0IGJ5IGNsaWNraW5nICdBZGQgcHJvZHVjdCcuIFRoZW4sIGNsaWNrICdDb250aW51ZScgb250byB0aGUgbmV4dCBzdGVwLiAKNS4gSW4gdGhlIFBheW1lbnQgc2V0dGluZ3MsIHVuZGVyICJDb25maXJtYXRpb24gcGFnZSIsIHNlbGVjdCAiRG9uJ3Qgc2hvdyBjb25maXJtYXRpb24gcGFnZSIgYW5kIGVudGVyIHlvdXIgKipwdWJsaXNoZWQgYXBwJ3MgVVJMKiouIDxpbWcgc3JjPSJodHRwczovL2FudmlsLXdlYnNpdGUtc3RhdGljLnMzLmV1LXdlc3QtMi5hbWF6b25hd3MuY29tL3RlbXBsYXRlcy9zYWFzLXRlbXBsYXRlL3ByaWNpbmctdGFibGUucG5nIiB3aWR0aD0iODAwcHgiLz4KCgojIyMgU3RlcCA1IC0gQWRkaW5nIFRoZSBQcmljaW5nIFRhYmxlIFRvIFlvdXIgQXBwCgpTdHJpcGUncyB3ZWJzaXRlIHNob3VsZCB0YWtlIHlvdSB0byB5b3VyIFtwcmljaW5nIHRhYmxlJ3MgcGFnZSAoaWYgbm90LCBmb2xsb3cgdGhpcyBsaW5rIGFuZCBzZWxlY3QgeW91ciBwcmljaW5nIHRhYmxlKV0oaHR0cHM6Ly9kYXNoYm9hcmQuc3RyaXBlLmNvbS90ZXN0L3ByaWNpbmctdGFibGVzKS4gTm93LCB3ZSdsbCBlbWJlZCB0aGUgcHJpY2luZyB0YWJsZSBpbiBvdXIgU2FhUyBhcHAuCgoxLiBDb3B5IHRoZSBjb2RlIGZvciB0aGUgcHJpY2luZyB0YWJsZS4gPGltZyBzcmM9Imh0dHBzOi8vYW52aWwtd2Vic2l0ZS1zdGF0aWMuczMuZXUtd2VzdC0yLmFtYXpvbmF3cy5jb20vdGVtcGxhdGVzL3NhYXMtdGVtcGxhdGUvc3RyaXBlLWRhc2hib2FyZC1wcmljaW5nLXRhYmxlLWNvZGUucG5nIiB3aWR0aD0iODAwcHgiLz4KMi4gT3BlbiB0aGUgU3RyaXBlUHJpY2luZyBGb3JtIGluIHRoZSBBbnZpbCBFZGl0b3IuIFRoZW4gW2VkaXQgdGhlIGN1c3RvbSBIVE1MXShodHRwczovL2FudmlsLndvcmtzL2RvY3MvdWkvY29tcG9uZW50cy9mb3JtcyNIVE1MLUZvcm1zLSYtQ3VzdG9tLUhUTUwtRm9ybXMpIGJ5IGNsaWNraW5nIHRoZSB0aHJlZSBkb3RzIGF0IHRoZSB0b3Agb2YgdGhlIGRlc2lnbmVyLiA8aW1nIHNyYz0iaHR0cHM6Ly9hbnZpbC13ZWJzaXRlLXN0YXRpYy5zMy5ldS13ZXN0LTIuYW1hem9uYXdzLmNvbS90ZW1wbGF0ZXMvc2Fhcy10ZW1wbGF0ZS9lZGl0LWh0bWwtYnV0dG9uLnBuZyIgd2lkdGg9IjgwMHB4Ii8+CjMuIFBhc3RlIHRoZSBjb2RlIGludG8gdGhlIFN0cmlwZVByaWNpbmcgRm9ybSdzIGN1c3RvbSBIVE1MLgo0LiBMYXN0bHksIGFkZCBgYW52aWwtbmFtZT0ic3RyaXBlLXByaWNpbmctdGFibGUiYCB0byB0aGUgYHN0cmlwZS1wcmljaW5nLXRhYmxlYCB0YWcuIFRoZSBmaW5hbCBIVE1MIHNob3VsZCBsb29rIGxpa2UgdGhpczoKCjxpbWcgc3JjPSJodHRwczovL2FudmlsLXdlYnNpdGUtc3RhdGljLnMzLmV1LXdlc3QtMi5hbWF6b25hd3MuY29tL3RlbXBsYXRlcy9zYWFzLXRlbXBsYXRlL3N0cmlwZS1wcmljaW5nLWh0bWwucG5nIiB3aWR0aD0iODAwcHgiLz4KCi0tLQoKIyMjIFN0ZXAgNiAtIFNldHRpbmcgVXAgVGhlIFdlYmhvb2tzCgpXZSBuZWVkIFN0cmlwZSB0byB0ZWxsIHVzIHdoZW4gYSBuZXcgY3VzdG9tZXIgaXMgY3JlYXRlZCBhbmQgd2hlbiB0aGVpciBzdWJzY3JpcHRpb24gaXMgdXBkYXRlZCBzbyB3ZSBjYW4gdXBkYXRlIG91ciBVc2VycyB0YWJsZSB3aXRoIHRoZSBTdHJpcGUgc3Vic2NyaXB0aW9uIGRldGFpbHMuIFdlJ2xsIHVzZSBbd2ViaG9va3NdKGh0dHBzOi8vd3d3LnJlZGhhdC5jb20vZW4vdG9waWNzL2F1dG9tYXRpb24vd2hhdC1pcy1hLXdlYmhvb2spIHRvIGRvIHRoaXMuIFtUaGVyZSBpcyBhIGd1aWRlIHRvIHNldHRpbmcgdXAgd2ViaG9va3MgaW4gU3RyaXBlIGhlcmVdKGh0dHBzOi8vZG9jcy5zdHJpcGUuY29tL3dlYmhvb2tzL3F1aWNrc3RhcnQpIGJ1dCBsZXQgbWUgZ2l2ZSB5b3UgYnJpZWYgaW5zdHJ1Y3Rpb25zLgoKIyMjIyBDdXN0b21lciBDcmVhdGVkCgoxLiBPcGVuIHRoZSBbV2ViaG9va3MgcGFnZV0oaHR0cHM6Ly9kYXNoYm9hcmQuc3RyaXBlLmNvbS90ZXN0L3dlYmhvb2tzKSBpbiBTdHJpcGUgYnkgc2VsZWN0aW5nIHRoZSAiRGV2ZWxvcGVycyIgbGluayBpbiB0aGUgYm90dG9tIGxlZnQgYW5kIG5hdmlnYXRpbmcgdG8gdGhlIHdlYmhvb2tzIHRhYi4gPGltZyBzcmM9Imh0dHBzOi8vYW52aWwtd2Vic2l0ZS1zdGF0aWMuczMuZXUtd2VzdC0yLmFtYXpvbmF3cy5jb20vdGVtcGxhdGVzL3NhYXMtdGVtcGxhdGUvZGV2ZWxvcGVycy13ZWJob29rLWRhc2hib2FyZC5wbmciIHdpZHRoPSI3MDBweCIvPgoyLiBDbGljayB0aGUgIkNyZWF0ZSBhbiBldmVudCBkZXN0aW5hdGlvbiIgYnV0dG9uLgozLiBTZXQgdGhlIGVuZHBvaW50IFVSTCB0byB5b3VyIHB1Ymxpc2hlZCBhcHAncyBVUkwgd2l0aCAiL18vYXBpL3N0cmlwZS9zdHJpcGVfY3VzdG9tZXJfY3JlYXRlZCIgYWRkZWQgdG8gdGhlIGVuZCAtIGkuZS4gImh0dHBzOi8vbXktc2Fhcy5hbnZpbC5hcHAvXy9hcGkvc3RyaXBlL3N0cmlwZVxfY3VzdG9tZXJcX2NyZWF0ZWQiLiA8aW1nIHNyYz0iaHR0cHM6Ly9hbnZpbC13ZWJzaXRlLXN0YXRpYy5zMy5ldS13ZXN0LTIuYW1hem9uYXdzLmNvbS90ZW1wbGF0ZXMvc2Fhcy10ZW1wbGF0ZS9lbmRwb2ludC11cmwucG5nIiB3aWR0aD0iNjAwcHgiLz4KNC4gVGhlbiBjbGljayAiKyBzZWxlY3QgZXZlbnRzIiBhbmQgc2VsZWN0ICJjdXN0b21lci5jcmVhdGVkIiB1bmRlciBldmVudHMgdG8gbGlzdGVuIGZvci4gPGltZyBzcmM9Imh0dHBzOi8vYW52aWwtd2Vic2l0ZS1zdGF0aWMuczMuZXUtd2VzdC0yLmFtYXpvbmF3cy5jb20vdGVtcGxhdGVzL3NhYXMtdGVtcGxhdGUvc2VhcmNoaW5nLWV2ZW50cy5wbmciIHdpZHRoPSI2MDBweCIvPgo1LiBGcm9tIG5vdyBvbiwgdGhpcyB3aWxsIGNhbGwgdGhlIGBzdHJpcGVfY3VzdG9tZXJfY3JlYXRlZGAgZnVuY3Rpb24gaW4geW91ciBBbnZpbCBhcHAncyBTdHJpcGVGdW5jdGlvbnMgbW9kdWxlIHdoZW4gYSBjdXN0b21lciBpcyBjcmVhdGVkLiBIZXJlJ3MgYW4gaW1hZ2Ugb2YgdGhlIHNldC11cCB3ZWJob29rOjwvYnI+PGltZyBzcmM9Imh0dHBzOi8vYW52aWwtd2Vic2l0ZS1zdGF0aWMuczMuZXUtd2VzdC0yLmFtYXpvbmF3cy5jb20vdGVtcGxhdGVzL3NhYXMtdGVtcGxhdGUvd2ViaG9vay1zZXR1cC5wbmciIHdpZHRoPSI1MDBweCIvPgoKIyMjIyBTdWJzY3JpcHRpb24gVXBkYXRlZAoKMS4gQWRkIGFub3RoZXIgZW5kcG9pbnQgaW4gU3RyaXBlLgoyLiBTZXQgdGhlIGVuZHBvaW50IFVSTCB0byB5b3VyIHB1Ymxpc2hlZCBhcHAncyBVUkwgd2l0aCAiXC9fL2FwaS9zdHJpcGUvc3RyaXBlXF9zdWJzY3JpcHRpb25cX3VwZGF0ZWQiIGFkZGVkIHRvIHRoZSBlbmQgaS5lLiAiaHR0cHM6Ly9teS1zYWFzLmFudmlsLmFwcC9cXy9hcGkvc3RyaXBlL3N0cmlwZVxfc3Vic2NyaXB0aW9uXF91cGRhdGVkIgozLiBUaGVuIHNlbGVjdCAiY3VzdG9tZXIuc3Vic2NyaXB0aW9uLnVwZGF0ZWQiIHVuZGVyIGV2ZW50cyB0byBsaXN0ZW4gZm9yLgo0LiBGcm9tIG5vdyBvbiwgdGhpcyB3aWxsIGNhbGwgdGhlIGBzdHJpcGVfc3Vic2NyaXB0aW9uX3VwZGF0ZWRgIGZ1bmN0aW9uIGluIHRoZSBTdHJpcGVGdW5jdGlvbnMgU2VydmVyIE1vZHVsZSBldmVyeSB0aW1lIGEgY3VzdG9tZXIgaXMgY3JlYXRlZC4KCjxpbWcgc3JjPSJodHRwczovL2FudmlsLXdlYnNpdGUtc3RhdGljLnMzLmV1LXdlc3QtMi5hbWF6b25hd3MuY29tL3RlbXBsYXRlcy9zYWFzLXRlbXBsYXRlL2ZpbmlzaGVkLXdlYmhvb2tzLnBuZyIgd2lkdGg9IjYwMHB4Ii8+CgojIyMgU3RlcCA3IC0gU2V0dGluZyBVcCBUaGUgQ3VzdG9tZXIgUG9ydGFsCgpMZXQncyBxdWlja2x5IHNldCB1cCBhIHdheSBmb3IgdXNlcnMgdG8gbWFuYWdlIHRoZWlyIHN1YnNjcmlwdGlvbi4gR28gdG8gdGhlIFN0cmlwZSBkYXNoYm9hcmQgYW5kIHVzZSB0aGUgc2VhcmNoIGJhciBhdCB0aGUgdG9wIHRvIGZpbmQgdGhlIGN1c3RvbWVyIHBvcnRhbCBzY3JlZW4uCgo8aW1nIHNyYz0iaHR0cHM6Ly9hbnZpbC13ZWJzaXRlLXN0YXRpYy5zMy5ldS13ZXN0LTIuYW1hem9uYXdzLmNvbS90ZW1wbGF0ZXMvc2Fhcy10ZW1wbGF0ZS9jdXN0b21lci1wb3J0YWwtbG9jYXRpb24ucG5nIiB3aWR0aD0iODAwcHgiLz4KClNldCB1cCBhIFtjdXN0b21lciBwb3J0YWxdKGh0dHBzOi8vZGFzaGJvYXJkLnN0cmlwZS5jb20vc2V0dGluZ3MvYmlsbGluZy9wb3J0YWwpLCBhY3RpdmF0ZSB0aGUgdGVzdCBsaW5rIGFuZCBjb3B5IGl0LgoKPGltZyBzcmM9Imh0dHBzOi8vYW52aWwtd2Vic2l0ZS1zdGF0aWMuczMuZXUtd2VzdC0yLmFtYXpvbmF3cy5jb20vdGVtcGxhdGVzL3NhYXMtdGVtcGxhdGUvY3VzdG9tZXItcG9ydGFsLXNldHVwLnBuZyIgd2lkdGg9IjgwMHB4Ii8+CgpUaGVuIG9wZW4gdGhlIFNhYVMgYXBwJ3MgQWNjb3VudE1hbmFnZW1lbnQgZm9ybSBhbmQgcG9pbnQgdGhlICJtYW5hZ2VcX3N1YnNjcmlwdGlvblxfbGluayIgY29tcG9uZW50J3MgVVJMIHRvIHRoZSBjb3BpZWQgbGluazoKCjxpbWcgc3JjPSJodHRwczovL2FudmlsLXdlYnNpdGUtc3RhdGljLnMzLmV1LXdlc3QtMi5hbWF6b25hd3MuY29tL3RlbXBsYXRlcy9zYWFzLXRlbXBsYXRlL21hbmFnZS1zdWJzY3JpcHRpb24tYnV0dG9uLnBuZyIgd2lkdGg9IjgwMHB4Ii8+CgpXZSdyZSBnb2luZyB0byBsZXQgdXNlcnMgbWFuYWdlIHRoZWlyIGVtYWlsIGFkZHJlc3MgZnJvbSB0aGUgQWNjb3VudCBwYWdlIG9mIG91ciBhcHAsIHNvIHdlJ2xsIGRpc2FibGUgdGhlIGFiaWxpdHkgZm9yIHVzZXJzIHRvIGNoYW5nZSB0aGVpciBlbWFpbCBpbiB0aGVpciBjdXN0b21lciBwb3J0YWwuIFRoZSBTYWFTIHRlbXBsYXRlIHN5bmNzIGVtYWlsIHVwZGF0ZXMgd2l0aCBTdHJpcGUgYXV0b21hdGljYWxseS4gQmFjayBpbiB0aGUgW2N1c3RvbWVyIHBvcnRhbF0oaHR0cHM6Ly9kYXNoYm9hcmQuc3RyaXBlLmNvbS9zZXR0aW5ncy9iaWxsaW5nL3BvcnRhbCkgY29uZmlnIHBhZ2UsIHVuY2hlY2sgdGhlICJFbWFpbCBhZGRyZXNzIiBjaGVja2JveCB1bmRlciBjdXN0b21lciBpbmZvcm1hdGlvbjoKCjxpbWcgc3JjPSJodHRwczovL2FudmlsLXdlYnNpdGUtc3RhdGljLnMzLmV1LXdlc3QtMi5hbWF6b25hd3MuY29tL3RlbXBsYXRlcy9zYWFzLXRlbXBsYXRlL2N1c3RvbWVyLXBvcnRhbC1lbWFpbC1jaGVja2JveC5wbmciIHdpZHRoPSI4MDBweCIvPgoKV2l0aCB0aGVzZSBzdGVwcyBjb21wbGV0ZWQsIHlvdXIgU3RyaXBlIGludGVncmF0aW9uIGlzIHJlYWR5IGZvciB0ZXN0aW5nLgoKLS0tCgojIyBUZXN0aW5nIFRoZSBBcHAKClRoZSB0ZW1wbGF0ZSBoYXMgYSBudW1iZXIgb2YgW05vdGlmaWNhdGlvbnNdKGh0dHBzOi8vYW52aWwud29ya3MvZG9jcy9jbGllbnQvYWxlcnRzLWFuZC1ub3RpZmljYXRpb25zI25vdGlmaWNhdGlvbnMpIHdoaWNoIHdpbGwgZ3VpZGUgeW91IHRocm91Z2ggdGVzdGluZyB0aGUgYXBwIGFzIGEgdXNlci4gVGhpcyB3aWxsIGJvdGggdGVzdCB0aGUgaW50ZWdyYXRpb24gd2UndmUgc2V0IHVwIGFuZCBsZXQgeW91IGV4cGVyaWVuY2Ugd2hhdCB0aGUgYXBwIGlzIGxpa2UgYXMgYSB1c2VyLiBbUnVuIHRoZSBhcHBdKGh0dHBzOi8vYW52aWwud29ya3MvZG9jcy9lZGl0b3IjdGhlLWFudmlsLWVkaXRvcikgYW5kIGZvbGxvdyBhbG9uZyB3aXRoIHRoZSBpbi1hcHAgaW5zdHJ1Y3Rpb24gbm90aWZpY2F0aW9ucy4KCjxpbWcgc3JjPSJodHRwczovL2FudmlsLXdlYnNpdGUtc3RhdGljLnMzLmV1LXdlc3QtMi5hbWF6b25hd3MuY29tL3RlbXBsYXRlcy9zYWFzLXRlbXBsYXRlL25vdGlmaWNhdGlvbi1leGFtcGxlLnBuZyIgd2lkdGg9IjgwMHB4Ii8+CgpIZXJlJ3MgYSB1c2VyIGZsb3cgZGlhZ3JhbSBmb3IgeW91IHRvIHNlZSBhbGwgdGhlIGFjdGlvbnMgeW91IGNhbiB0YWtlIHdpdGggdGhlIHRlbXBsYXRlOgoKPGltZyBzcmM9Imh0dHBzOi8vYW52aWwtd2Vic2l0ZS1zdGF0aWMuczMuZXUtd2VzdC0yLmFtYXpvbmF3cy5jb20vdGVtcGxhdGVzL3NhYXMtdGVtcGxhdGUvdXNlci1mbG93LWRpYWdyYW0ucG5nIiB3aWR0aD0iNjAwcHgiLz4KCi0tLQoKLS0tCgojIyBNYWtpbmcgVGhlIEFwcCBZb3VyIE93bgoKTm93IHRoYXQgeW91ciBTdHJpcGUgaW50ZWdyYXRpb24gaXMgc2V0IHVwIGFuZCB5b3UndmUgZXhwZXJpZW5jZWQgdGhlIGFwcCBmcm9tIGEgdXNlcidzIHBlcnNwZWN0aXZlLCBpdCdzIHRpbWUgdG8gbWFrZSB0aGlzIGFwcCB5b3VyIG93bi4KCiMjIyBTdGVwIDEgLSBSZW1vdmUgVGhlIFRlbXBsYXRlIE5vdGlmaWNhdGlvbnMKCkZpcnN0LCB3ZSBjYW4gc2VhcmNoIChfY3RybCtzaGlmdCtGXykgZm9yIHRoZSAiIyBURU1QTEFURSBFWFBMQU5BVElPTiBPTkxZIiBjb21tZW50cyBhbmQgZGVsZXRlIHRoZSByZWxldmFudCBjb2RlIGJlbG93LgoKIyMjIFN0ZXAgMiAtIFVzaW5nIFVzZXIgUGVybWlzc2lvbnMKCkZvciBhIFNhYVMgYXBwIHRvIGVhcm4gbW9uZXksIHlvdSdsbCB3YW50IHRvIGhhdmUgcHJlbWl1bSBmZWF0dXJlcyB0aGF0IGFyZSByZXN0cmljdGVkIHRvIHBhaWQgdXNlcnMgb24gc3BlY2lmaWMgcGxhbnMgLSB0aGlzIGlzIHdoZXJlIHVzZXIgcGVybWlzc2lvbnMgY29tZSBpbi4KCiMjIyMgV2hhdCdzIEluY2x1ZGVkIFdpdGggVGhlIFRlbXBsYXRlCgpUaGUgdGVtcGxhdGUgY29tZXMgd2l0aCBhIGJlc3Bva2UgZnVuY3Rpb24gYW5kIGRlY29yYXRvciBkZXNpZ25lZCB0byBzaW1wbGlmeSBtYW5hZ2luZyB1c2VyIHBlcm1pc3Npb25zOgoKLSBgdXNlcl9oYXNfc3Vic2NyaXB0aW9uYDogQSBmdW5jdGlvbiB0aGF0IHdvcmtzIHdpdGggW2BAYW52aWwuc2VydmVyLmNhbGxhYmxlYF0oaHR0cHM6Ly9hbnZpbC53b3Jrcy9kb2NzL2FwaS9hbnZpbC5zZXJ2ZXIuaHRtbCNjYWxsYWJsZSkuIEl0IHZlcmlmaWVzIHdoZXRoZXIgdGhlIHVzZXIncyBzdWJzY3JpcHRpb24gaXMgaW5jbHVkZWQgaW4gdGhlIGxpc3Qgb2Ygc3Vic2NyaXB0aW9ucyBhdXRob3JpemVkIHRvIHVzZSB0aGUgZnVuY3Rpb24gZGVjb3JhdGVkIGJ5IGBAYW52aWwuc2VydmVyLmNhbGxhYmxlYC4gSWYgcGVybWlzc2lvbiBpcyBkZW5pZWQsIGEgW2BQZXJtaXNzaW9uRGVuaWVkYF0oaHR0cHM6Ly9hbnZpbC53b3Jrcy9kb2NzL2FwaS9hbnZpbC5zZXJ2ZXIjUGVybWlzc2lvbkRlbmllZCkgZXhjZXB0aW9uIGlzIHRocm93bi4KLSBgQGNhdGNoX3Blcm1pc3Npb25fZXJyb3JzYDogQSBkZWNvcmF0b3IgdGhhdCBjYXRjaGVzIGFueSBbYGFudmlsLnNlcnZlci5QZXJtaXNzaW9uRGVuaWVkYF0oaHR0cHM6Ly9hbnZpbC53b3Jrcy9kb2NzL2FwaS9hbnZpbC5zZXJ2ZXIjUGVybWlzc2lvbkRlbmllZCkgZXhjZXB0aW9ucyByYWlzZWQgYnkgdGhlIGRlY29yYXRlZCBjbGllbnQtc2lkZSBmdW5jdGlvbi4gSWYgcGVybWlzc2lvbiBpcyBkZW5pZWQsIGl0IHByb21wdHMgdGhlIHVzZXIgdG8gdXBncmFkZSB0aGVpciBzdWJzY3JpcHRpb24uCgojIyMjIFVzaW5nIFRoZSBGdW5jdGlvbnMgVG9nZXRoZXIKCllvdSBjYW4gdXNlIGBAYW52aWwuc2VydmVyLmNhbGxhYmxlYCwgYHVzZXJfaGFzX3N1YnNjcmlwdGlvbmAgYW5kIGBAY2F0Y2hfcGVybWlzc2lvbl9lcnJvcnNgIHRvZ2V0aGVyIGFzIGZvbGxvd3M6CgojIyMjIyAxLiBZb3UgcmVzdHJpY3QgYWNjZXNzIHRvIGEgZnVuY3Rpb24gd2l0aCBgQGFudmlsLnNlcnZlci5jYWxsYWJsZWAgYW5kIGB1c2VyX2hhc19zdWJzY3JpcHRpb25gCgpUbyByZXN0cmljdCBhY2Nlc3MgdG8gYSBwcmVtaXVtIGZ1bmN0aW9uIHRvIHVzZXJzIHdpdGggYSB2YWxpZCBzdWJzY3JpcHRpb24sIHN0YXJ0IGJ5IGRlY29yYXRpbmcgdGhlIHByZW1pdW0gZnVuY3Rpb24gd2l0aCBgQGFudmlsLnNlcnZlci5jYWxsYWJsZWAuIFlvdSBjYW4gcGFzcyBgQGFudmlsLnNlcnZlci5jYWxsYWJsZWAncyBgcmVxdWlyZV91c2VyYCBhcmd1bWVudCBgdXNlcl9oYXNfc3Vic2NyaXB0aW9uYC4gYHVzZXJfaGFzX3N1YnNjcmlwdGlvbmAgdGFrZXMgYSBsaXN0IG9mIGFsbG93ZWQgc3Vic2NyaXB0aW9ucyBhbmQgY2hlY2tzIGlmIHRoZSBsb2dnZWQtaW4gdXNlcuKAmXMgc3Vic2NyaXB0aW9uIG1hdGNoZXMgYW55IGVudHJ5IGluIHRoZSBsaXN0LgoKRnJvbSB0aGUgdGVtcGxhdGUsIHRoaXMgZXhhbXBsZSBmdW5jdGlvbiBpcyBvbmx5IGFsbG93ZWQgdG8gYmUgcnVuIGJ5IHVzZXJzIHdpdGggYSAicGVyc29uYWwiIHN1YnNjcmlwdGlvbjoKCmBgYCBQeXRob24KIyBIZXJlJ3MgYW4gZXhhbXBsZSBvZiBhIGZ1bmN0aW9uIHRoYXQgd291bGQgcmVxdWlyZSBhIHBhaWQgc3Vic2NyaXB0aW9uCkBhbnZpbC5zZXJ2ZXIuY2FsbGFibGUocmVxdWlyZV91c2VyPXVzZXJfaGFzX3N1YnNjcmlwdGlvbihbInBlcnNvbmFsIl0pKQpkZWYgY2FsY3VsYXRlX3BlcmNlbnRhZ2Vfb2YobnVtYmVyLCB0b3RhbF9udW1iZXIpOgogICAgcGVyY2VudGFnZSA9IChpbnQobnVtYmVyKSAvIGludCh0b3RhbF9udW1iZXIpKSAqIDEwMAogICAgcmV0dXJuIHBlcmNlbnRhZ2UKYGBgCgpJZiB0aGUgdXNlciBoYXMgYW4gYWN0aXZlIHN1YnNjcmlwdGlvbiB3aGljaCBpcyBpbiB0aGUgYWxsb3dlZCBzdWJzY3JpcHRpb25zIHBhc3NlZCB0byBgdXNlcl9oYXNfc3Vic2NyaXB0aW9uYCwgdGhlIGZ1bmN0aW9uIHdpbGwgcnVuLiBJZiB0aGV5IGRvbuKAmXQgbWVldCB0aGUgc3Vic2NyaXB0aW9uIHJlcXVpcmVtZW50LCBhIHBlcm1pc3Npb25zIGVycm9yIGlzIHJhaXNlZCBhbmQgY2F1Z2h0IGJ5IGBAY2F0Y2hfcGVybWlzc2lvbl9lcnJvcnNgIC0gbGV0IG1lIHNob3cgeW91IGhvdyB0byB1c2UgYEBjYXRjaF9wZXJtaXNzaW9uX2Vycm9yc2AuCgojIyMjIyAyLiBZb3UgdXNlIGBAY2F0Y2hfcGVybWlzc2lvbl9lcnJvcnNgIG9uIHRoZSBjbGllbnQtc2lkZSB0byBwcm9tcHQgdXNlcgogIApXaXRoIHRoZSBzZXJ2ZXItc2lkZSBmdW5jdGlvbiByZXN0cmljdGVkLCBpdCdzIHRpbWUgdG8gcHJvbXB0IHVzZXJzIHRvIHVwZ3JhZGUgaWYgdGhleSB0cnkgdG8gdXNlIGEgcHJlbWl1bSBmZWF0dXJlIHdpdGhvdXQgdGhlIHJpZ2h0IHN1YnNjcmlwdGlvbiAtIGZvciB0aGlzLCB5b3UgY2FuIHVzZSBgQGNhdGNoX3Blcm1pc3Npb25fZXJyb3JzYC4gYEBjYXRjaF9wZXJtaXNzaW9uX2Vycm9yc2Agd2lsbCBjYXRjaCBhbnkgYGFudmlsLnNlcnZlci5QZXJtaXNzaW9uRGVuaWVkYCBleGNlcHRpb25zIHRocm93biBieSBvdXIgc2VydmVyLXNpZGUgZnVuY3Rpb24gYW5kIHByb21wdCB1c2VycyB0byB1cGdyYWRlIGlmIHRoZXkgZG9u4oCZdCBtZWV0IHRoZSBzdWJzY3JpcHRpb24gcmVxdWlyZW1lbnQuCgpGcm9tIHRoZSBleGFtcGxlIGluIHRoZSB0ZW1wbGF0ZToKCmBgYCBQeXRob24KIyBDYXRjaF9wZXJtaXNzaW9uX2Vycm9ycyBjYXRjaGVzIGV4Y2VwdGlvbnMgdGhhdCBhcmUgdGhyb3duIGJ5IGEgdXNlciBub3QgYmVpbmcgc3Vic2NyaWJlZCBhbmQgZ2l2ZXMgdGhlbSBhIG5vdGlmaWNhdGlvbiB0byB1cGdyYWRlCiAgQGNhdGNoX3Blcm1pc3Npb25fZXJyb3JzCiAgIyBUaGlzIGZ1bmN0aW9uIGlzIGEgc2ltcGxlIGV4YW1wbGUgZnVuY3Rpb24gdG8gc2hvdyB5b3UgZnVuY3Rpb25hbGl0eSB0aGF0IGlzIGdhdGVkIGJlaGluZCBhIHBheXdhbGwKICBkZWYgY2FsY3VsYXRlX2J1dHRvbl9jbGljayhzZWxmLCAqKmV2ZW50X2FyZ3MpOgogICAgIiIiVGhpcyBtZXRob2QgaXMgY2FsbGVkIHdoZW4gdGhlIGJ1dHRvbiBpcyBjbGlja2VkIiIiCiAgICBpZiBzZWxmLm51bWJlcl8xX3RleHRib3gudGV4dCBhbmQgc2VsZi5udW1iZXJfMl90ZXh0Ym94LnRleHQ6CiAgICAgIAogICAgICAjIFRoaXMgbWFrZXMgYSBjYWxsIHRvIGEgcmVzdHJpY3RlZCBmdW5jdGlvbiAKICAgICAgcGVyY2VudGFnZSA9IGFudmlsLnNlcnZlci5jYWxsKCdjYWxjdWxhdGVfcGVyY2VudGFnZV9vZicsIHNlbGYubnVtYmVyXzFfdGV4dGJveC50ZXh0LCBzZWxmLm51bWJlcl8yX3RleHRib3gudGV4dCkKICAgIC4uLgpgYGAKCkFuZCB0aGF0J3MgaXQsIHlvdSBjYW4gcmVzdHJpY3QgYW55IG51bWJlciBvZiBmZWF0dXJlcyB0aGlzIHdheS4KCiMjIyBTdGVwIDMgLSBUYWtlIFN0cmlwZSBvdXQgb2YgdGVzdCBtb2RlCgpXaGVuIHlvdSdyZSByZWFkeSB0byBnbyBsaXZlLCBzd2l0Y2ggU3RyaXBlIGZyb20gW3Rlc3QgbW9kZV0oaHR0cHM6Ly9kb2NzLnN0cmlwZS5jb20vdGVzdC1tb2RlKSB0byBsaXZlIG1vZGUuCgpOZXh0LCB1cGRhdGUgdGhlIGFwcCdzIGFjY291bnQgbWFuYWdlbWVudCBsaW5rIChjb25maWd1cmVkIGluIFtzdGVwIDddKCNzdGVwLTctLS1zZXR0aW5nLXVwLXRoZS1jdXN0b21lci1wb3J0YWwpKSB0byB1c2UgdGhlIFtjdXN0b21lciBwb3J0YWwncyBsaXZlIGxpbmtdKGh0dHBzOi8vZG9jcy5zdHJpcGUuY29tL2N1c3RvbWVyLW1hbmFnZW1lbnQvYWN0aXZhdGUtbm8tY29kZS1jdXN0b21lci1wb3J0YWwjdXJsLXBhcmFtZXRlcnMpLgoKRmluYWxseSwgcmVwbGFjZSB0aGUgW0FQSSBrZXlzXSgjc3RlcC0yLS0tYWRkLXRoZS1hcGkta2V5KSBpbiB5b3VyIEFudmlsIGFwcCB3aXRoIHRoZSBwcm9kdWN0aW9uIGtleXMuCg==
+  __init__.py: IwojIFRoaXMgcmVwb3NpdG9yeSBpcyBhbiBBbnZpbCBhcHAuIExlYXJuIG1vcmUgYXQgaHR0cHM6Ly9hbnZpbC53b3Jrcy8KIyBUbyBydW4gdGhlIHNlcnZlci1zaWRlIGNvZGUgb24geW91ciBvd24gbWFjaGluZSwgcnVuOgojIHBpcCBpbnN0YWxsIGFudmlsLXVwbGluawojIHB5dGhvbiAtbSBhbnZpbC5ydW5fYXBwX3ZpYV91cGxpbmsgWW91ckFwcFBhY2thZ2VOYW1lCgpfX3BhdGhfXyA9IFtfX3BhdGhfX1swXSArICIvc2VydmVyX2NvZGUiLCBfX3BhdGhfX1swXSArICIvY2xpZW50X2NvZGUiXQo=
+forms:
+- class_name: AccountManagement
+  code: "from ._anvil_designer import AccountManagementTemplate\nfrom anvil import *\nimport anvil.server\nimport anvil.users\nimport anvil.tables as tables\nimport anvil.tables.query as q\nfrom anvil.tables import app_tables\n\nfrom .ChangeName import ChangeName\nfrom .ChangeEmail import ChangeEmail\nfrom .DeleteAccountAlert import DeleteAccountAlert\n\nclass AccountManagement(AccountManagementTemplate):\n  def __init__(self, **properties):\n    self.user = anvil.users.get_user()\n    \n    # Set Form properties and Data Bindings.\n    self.init_components(**properties)\n    \n    # Any code you write here will run before the form opens\n\n  def change_name_link_click(self, **event_args):\n    \"\"\"This method is called when the link is clicked\"\"\"\n    new_name = alert(ChangeName(item=self.user[\"name\"]), title=\"Change name\", buttons=None, dismissible=True, large=True)\n    if new_name:\n      self.user = anvil.server.call('change_name', new_name)\n      self.refresh_data_bindings()\n\n    # TEMPLATE EXPLANATION ONLY - DELETE THIS WHEN YOU'RE READY\n    Notification(\"Now that you've seen how the template handles editing user information, let’s explore how users can cancel a subscription. We'll do this using the Stripe Customer Portal we set up while setting up with this template. Click the Manage Subscription button, cancel your subscription and go back to this app's homepage.\", title=\"Template Explanation\", timeout=None, style=\"warning\").show()\n    Notification(\"The webhooks set up earlier will keep user records in this app synchronized with customer records in Stripe. For details on how this template manages cancellations and deletions, check out our full guide at https://anvil.works/learn/tutorials/using-saas-template.\", title=\"Template Explanation\", timeout=None, style=\"warning\").show()\n    Notification(\"To wrap up, try deleting your account. This will log you out, remove all user information from both this app and Stripe, and complete your tour of the app’s functionality.\", title=\"Template Explanation\", timeout=None, style=\"warning\").show()\n\n  def change_email_link_click(self, **event_args):\n    \"\"\"This method is called when the link is clicked\"\"\"\n    new_email = alert(ChangeEmail(item=self.user[\"email\"]), title=\"Change email\", buttons=None, dismissible=True, large=True)\n    if new_email:\n      self.user = anvil.server.call('change_email', new_email)\n      self.refresh_data_bindings()\n\n  def reset_password_link_click(self, **event_args):\n    \"\"\"This method is called when the link is clicked\"\"\"\n    if confirm(\"Resetting your password will send a reset email to your inbox and log you out. Do you want to continue?\"):\n      anvil.users.send_password_reset_email(self.user[\"email\"])\n      alert(\"A password reset email has been sent to your inbox.\", title=\"Password reset email sent\")\n      anvil.users.logout()\n      open_form(\"LoginPage\")\n\n  def delete_account_link_click(self, **event_args):\n    \"\"\"This method is called when the button is clicked\"\"\"\n    if alert(DeleteAccountAlert(), buttons=None, large=True):\n      anvil.server.call('delete_user')\n      anvil.users.logout()\n      open_form('LoginPage')\n\n  def form_show(self, **event_args):\n    \"\"\"This method is called when the form is shown on the page\"\"\"\n    # TEMPLATE EXPLANATION ONLY - DELETE THIS WHEN YOU'RE READY\n    Notification(\"Welcome to your app's account management page—a solid foundation for self-service account management that you can customize for your users. Start by updating your name.\", title=\"Template Explanation\", timeout=None, style=\"warning\").show()"
+  components_by_slot:
+    content_slot:
+    - layout_properties: {}
+      name: name_heading
+      properties:
+        margin: [2rem, null, 2rem, null]
+        text: Name
+      type: form:dep_gqlhr7sei7ys7:_Components.Heading
+    - data_bindings:
+      - {code: 'self.user["name"] or "-"', property: text, writeback: false}
+      layout_properties: {}
+      name: name_text
+      properties:
+        margin: [2rem, null, 2rem, null]
+        text: Name
+      type: form:dep_gqlhr7sei7ys7:_Components.Text
+    - event_bindings: {click: change_name_link_click}
+      layout_properties: {}
+      name: change_name_link
+      properties:
+        margin: [2rem, null, 2rem, null]
+        spacing:
+          margin: [null, null, '5', null]
+        text: Change name
+      type: form:dep_gqlhr7sei7ys7:_Components.Link
+    - layout_properties: {}
+      name: email_heading
+      properties:
+        margin: [2rem, null, 2rem, null]
+        text: Email
+      type: form:dep_gqlhr7sei7ys7:_Components.Heading
+    - data_bindings:
+      - {code: 'self.user[''email'']', property: text, writeback: false}
+      event_bindings: {show: email_text_show}
+      layout_properties: {}
+      name: email_text
+      properties:
+        margin: [2rem, null, 2rem, null]
+        text: Email
+      type: form:dep_gqlhr7sei7ys7:_Components.Text
+    - event_bindings: {click: change_email_link_click}
+      layout_properties: {}
+      name: change_email_link
+      properties:
+        margin: [2rem, null, 2rem, null]
+        spacing:
+          margin: [null, null, '5', null]
+        text: Change email
+      type: form:dep_gqlhr7sei7ys7:_Components.Link
+    - components: []
+      event_bindings: {click: reset_password_link_click}
+      layout_properties: {}
+      name: reset_password_link
+      properties:
+        margin: [2rem, null, 2rem, null]
+        spacing:
+          margin: ['5', null, '5', null]
+        text: Reset password
+      type: form:dep_gqlhr7sei7ys7:_Components.Link
+    - event_bindings: {}
+      layout_properties: {}
+      name: manage_subscription_link
+      properties:
+        margin: [2rem, null, 2rem, null]
+        spacing:
+          margin: ['5', null, '5', null]
+        text: Manage subscription
+        url: ''
+      type: form:dep_gqlhr7sei7ys7:_Components.Link
+    - layout_properties: {}
+      name: delete_account_link
+      properties:
+        margin: [2rem, null, 2rem, null]
+        spacing:
+          margin: ['5', null, '5', null]
+        text: Delete account
+        text_color: theme:Error
+        visible: true
+      type: form:dep_gqlhr7sei7ys7:_Components.Link
+  id: '1728912208468133337216935.46541'
+  is_package: true
+  layout:
+    form_event_bindings: {show: form_show}
+    type: form:HomepageLayout
+- class_name: AccountManagement.ChangeEmail
+  code: |-
+    from ._anvil_designer import ChangeEmailTemplate
+    from anvil import *
+    import anvil.server
+    import anvil.users
+    import anvil.tables as tables
+    import anvil.tables.query as q
+    from anvil.tables import app_tables
+
+
+    class ChangeEmail(ChangeEmailTemplate):
+      def __init__(self, **properties):
+        # Set Form properties and Data Bindings.
+        self.user = anvil.users.get_user()
+        self.init_components(**properties)
+
+        # Any code you write here will run before the form opens.
+
+      def save_button_click(self, **event_args):
+        """This method is called when the button is clicked"""
+        self.raise_event("x-close-alert", value=self.email_text_box.text)
+  components:
+  - layout_properties: {grid_position: 'HEJIRN,UKNELH'}
+    name: email_change_info_label
+    properties: {style: body, text: Changing your email will also update the email used in Stripe for billing.}
+    type: form:dep_gqlhr7sei7ys7:_Components.Text
+  - data_bindings:
+    - {code: 'self.user[''email'']', property: text, writeback: false}
+    layout_properties: {grid_position: 'WLTIAZ,FXLKDG'}
+    name: email_text_box
+    properties: {label: Your email}
+    type: form:dep_gqlhr7sei7ys7:_Components.TextInput.TextBox
+  - event_bindings: {click: save_button_click}
+    layout_properties: {full_width_row: true, grid_position: 'JDHRCQ,RWECMV'}
+    name: save_button
+    properties: {align: right, appearance: filled, text: Save, underline: false}
+    type: form:dep_gqlhr7sei7ys7:_Components.Button
+  container: {type: ColumnPanel}
+  id: '1721837741356237609649645.89236'
+  is_package: true
+- class_name: AccountManagement.ChangeName
+  code: |+
+    from ._anvil_designer import ChangeNameTemplate
+    from anvil import *
+    import anvil.server
+    import anvil.users
+    import anvil.tables as tables
+    import anvil.tables.query as q
+    from anvil.tables import app_tables
+
+    class ChangeName(ChangeNameTemplate):
+      def __init__(self, **properties):
+        # Set Form properties and Data Bindings.
+        self.user = anvil.users.get_user()
+        self.init_components(**properties)
+
+        # Any code you write here will run before the form opens.
+
+      def save_button_click(self, **event_args):
+        """This method is called when the button is clicked"""
+        # TEMPLATE EXPLANATION ONLY - DELETE THIS WHEN YOU'RE READY
+        Notification("This calls the change_name function in the Users server module.", title="Template Explanation", timeout=None, style="warning").show()
+        self.raise_event("x-close-alert", value=self.name_text_box.text)
+
+  components:
+  - layout_properties: {grid_position: 'HRHCZP,IELVDW'}
+    name: text_1
+    properties: {icon: '', scale: medium, text: 'This will change your name in this app. To change the name used in your billing details, please select "Manage subscription" in the account management page and change your name in Stripe.'}
+    type: form:dep_gqlhr7sei7ys7:_Components.Text
+  - data_bindings:
+    - {code: 'self.user[''name''] or "-"', property: text, writeback: false}
+    layout_properties: {grid_position: 'SYXEQN,RBVSDR'}
+    name: name_text_box
+    properties: {label: Your Name, placeholder: '', text: 'self.user["name"] or "-"'}
+    type: form:dep_gqlhr7sei7ys7:_Components.TextInput.TextBox
+  - event_bindings: {click: save_button_click}
+    layout_properties: {full_width_row: true, grid_position: 'JDHRCQ,RWECMV'}
+    name: save_button
+    properties: {align: right, appearance: filled, text: Save}
+    type: form:dep_gqlhr7sei7ys7:_Components.Button
+  container: {type: ColumnPanel}
+  id: '172183784474318367276267.26542'
+  is_package: true
+- class_name: AccountManagement.DeleteAccountAlert
+  code: |
+    from ._anvil_designer import DeleteAccountAlertTemplate
+    from anvil import *
+    import anvil.server
+    import anvil.users
+    import anvil.tables as tables
+    import anvil.tables.query as q
+    from anvil.tables import app_tables
+
+
+    class DeleteAccountAlert(DeleteAccountAlertTemplate):
+      def __init__(self, **properties):
+        # Set Form properties and Data Bindings.
+        self.init_components(**properties)
+
+        # Any code you write here will run before the form opens.
+
+      def delete_button_click(self, **event_args):
+        """This method is called when the button is clicked"""
+        self.raise_event("x-close-alert", value=True)
+
+      def cancel_button_click(self, **event_args):
+        """This method is called when the button is clicked"""
+        self.raise_event("x-close-alert", value=False)
+  components:
+  - layout_properties: {full_width_row: true, grid_position: 'LXDANU,RGMPUP'}
+    name: heading_1
+    properties: {text: Delete Your Data}
+    type: form:dep_gqlhr7sei7ys7:_Components.Heading
+  - components: []
+    layout_properties: {full_width_row: true, grid_position: 'JWBKXV,UKCUON'}
+    name: rich_text_1
+    properties:
+      content: |-
+        Are you want to delete your account, subscription information and usage data from our systems?
+        <br>
+        <span style="color:#B3261E;"><b>This is irreversible.</b></span>
+      format: restricted_html
+    type: RichText
+  - event_bindings: {click: cancel_button_click}
+    layout_properties: {grid_position: 'QWRUFK,FLYGJQ'}
+    name: cancel_button
+    properties: {align: center, appearance: elevated, text: Cancel}
+    type: form:dep_gqlhr7sei7ys7:_Components.Button
+  - event_bindings: {click: delete_button_click}
+    layout_properties: {grid_position: 'QWRUFK,LYTVUX'}
+    name: delete_button
+    properties: {align: center, appearance: filled, background: 'theme:Error', text: 'Yes, delete my data.', underline: false}
+    type: form:dep_gqlhr7sei7ys7:_Components.Button
+  container: {type: ColumnPanel}
+  id: '1721837905106244423974689.07706'
+  is_package: true
+- class_name: Calculator
+  code: "from ._anvil_designer import CalculatorTemplate\nfrom anvil import *\nimport anvil.server\nimport anvil.users\nimport anvil.tables as tables\nimport anvil.tables.query as q\nfrom anvil.tables import app_tables\n\nfrom ..user_permissions import catch_permission_errors\n\nclass Calculator(CalculatorTemplate):\n  def __init__(self, **properties):\n    # Set Form properties and Data Bindings.\n    self.init_components(**properties)\n\n    # Any code you write here will run before the form opens.\n    # TODO explain that we aren't doing anything in the init for this example - do this for every form in template with empty init\n  \n  # Catch_permission_errors catches exceptions that are thrown by a user not being subscribed and gives them a notification to upgrade\n  @catch_permission_errors\n  # This function is a simple example function to show you functionality that is gated behind a paywall\n  def calculate_button_click(self, **event_args):\n    \"\"\"This method is called when the button is clicked\"\"\"\n    if self.number_1_textbox.text and self.number_2_textbox.text:\n      percentage = anvil.server.call('calculate_percentage_of', self.number_1_textbox.text, self.number_2_textbox.text)\n      self.answer_text.text = f\"{self.number_1_textbox.text} is {percentage}% of {self.number_2_textbox.text}\"\n      self.answer_text.visible = True\n      # TEMPLATE EXPLANATION ONLY - DELETE THIS WHEN YOU'RE READY\n      Notification(\"Now you can use the calculator. Click the account button in the navbar to open the account settings.\", title=\"Template Explanation\", timeout=None, style=\"warning\").show()\n    else:\n      Notification(\"Please enter two numbers.\", timeout=3).show()\n"
+  components_by_slot:
+    content_slot:
+    - components:
+      - layout_properties: {grid_position: 'JTSTTE,SFBYQC'}
+        name: heading_1
+        properties: {align: center, text: Percentage calculator}
+        type: form:dep_gqlhr7sei7ys7:_Components.Heading
+      - layout_properties: {grid_position: 'EPZMPZ,SGMIVD'}
+        name: spacer_2
+        properties: {}
+        type: Spacer
+      - layout_properties: {grid_position: 'ZIIPHL,UGYSRK'}
+        name: spacer_1
+        properties: {}
+        type: Spacer
+      - event_bindings: {}
+        layout_properties: {grid_position: 'ZIIPHL,FGCWSY'}
+        name: number_1_textbox
+        properties: {type: number}
+        type: form:dep_gqlhr7sei7ys7:_Components.TextInput.TextBox
+      - layout_properties: {grid_position: 'ZIIPHL,CGNAHN'}
+        name: text_1
+        properties: {align: center, text: is what percentage of}
+        type: form:dep_gqlhr7sei7ys7:_Components.Text
+      - event_bindings: {pressed_enter: number_2_textbox_pressed_enter}
+        layout_properties: {grid_position: 'ZIIPHL,USWKHP'}
+        name: number_2_textbox
+        properties: {}
+        type: form:dep_gqlhr7sei7ys7:_Components.TextInput.TextBox
+      - layout_properties: {grid_position: 'ZIIPHL,NWEHXA'}
+        name: text_2
+        properties: {align: left, text: '?'}
+        type: form:dep_gqlhr7sei7ys7:_Components.Text
+      - layout_properties: {grid_position: 'YXIBNS,NFEBCC'}
+        name: answer_text
+        properties: {align: center, text: '', visible: false}
+        type: form:dep_gqlhr7sei7ys7:_Components.Text
+      layout_properties: {}
+      name: column_panel_1
+      properties: {col_spacing: tiny, col_widths: '{"CGNAHN":20,"NWEHXA":5,"NFEBCC":13,"USWKHP":22,"FGCWSY":25,"SGMIVD":56,"UGYSRK":5}'}
+      type: ColumnPanel
+    - event_bindings: {click: calculate_button_click}
+      layout_properties: {}
+      name: calculate_button
+      properties: {align: center, appearance: filled, icon_size: 0, text: Calculate}
+      type: form:dep_gqlhr7sei7ys7:_Components.Button
+  id: '1721838989058505303724298.55133'
+  is_package: true
+  layout: {type: 'form:HomepageLayout'}
+- class_name: CompareTranscription
+  code: |
+    from ._anvil_designer import CompareTranscriptionTemplate
+    from anvil import *
+    import anvil.server
+    import anvil.users
+
+
+    class CompareTranscription(CompareTranscriptionTemplate):
+      def __init__(self, **properties):
+        self.init_components(**properties)
+
+      def compare_button_click(self, **event_args):
+        user_text = self.user_input_box.text
+        official_text = self.official_input_box.text
+
+        if not user_text or not official_text:
+          alert("Please fill in both fields.")
+          return
+
+        result = anvil.server.call("compare_transcriptions", user_text, official_text)
+        self.comparison_output.content = result["html"]
+        self.accuracy_label.text = (
+          f"Accuracy: {result['stats']['accuracy']}% — "
+          f"{result['stats']['correct']} correct, "
+          f"{result['stats']['incorrect']} wrong, "
+          f"{result['stats']['missing']} missing"
+        )
+  components:
+  - components:
+    - components:
+      - layout_properties: {grid_position: 'HCWFHA,IGQPWO'}
+        name: official_input_box
+        properties:
+          margin: ['20', '0', '10', '10']
+        type: TextBox
+      - data_bindings: []
+        layout_properties: {grid_position: 'YWITLX,SIOAXT'}
+        name: user_input_box
+        properties:
+          auto_expand: false
+          height: '100'
+          margin: [null, '20', '20', '10']
+        type: TextArea
+      - layout_properties: {grid_position: 'TEWYML,RQLRRZ'}
+        name: compare_button
+        properties:
+          spacing:
+            margin: [null, null, '20', '10']
+          text: button_1
+        type: Button
+      - layout_properties: {grid_position: 'FKZTAU,SFRWYI'}
+        name: comparison_output
+        properties:
+          spacing:
+            margin: [null, '20', '20', '20']
+        type: RichText
+      - layout_properties: {grid_position: 'GVYVQS,CNSQGY'}
+        name: accuracy_label
+        properties:
+          spacing:
+            margin: [null, '5', '20', '20']
+        type: Label
+      layout_properties: {width: 1056.4749755859375}
+      name: content_panel
+      properties:
+        col_spacing: medium
+        col_widths: '{}'
+        spacing:
+          margin: ['50', '0', '20', '20']
+          padding: ['20', '20', '20', '5']
+        spacing_above: small
+        visible: true
+      type: ColumnPanel
+    layout_properties: {slot: nav-right}
+    name: navbar_links
+    properties:
+      spacing:
+        margin: ['20', '50', null, '50']
+        padding: [null, null, '150', null]
+    type: FlowPanel
+  container:
+    properties: {html: '@theme:standard-page.html'}
+    type: HtmlTemplate
+  id: '174646641754338536707180.709564'
+  is_package: true
+- class_name: HomepageLayout
+  code: "from ._anvil_designer import HomepageLayoutTemplate\nfrom anvil import *\nimport anvil.tables as tables\nimport anvil.tables.query as q\nfrom anvil.tables import app_tables\nimport anvil.users\nimport anvil.server\n\nfrom ..StripePricing import StripePricing\n\nfrom anvil import designer\n\n# TEMPLATE EXPLANATION ONLY - DELETE THIS CONDITIONAL WHEN YOU'RE READY \nif anvil.designer.in_designer:\n  PRODUCT_NAMES = [\"Personal\"]\nelse:\n  PRODUCT_NAMES = anvil.server.call(\"get_product_names\")\n\nclass HomepageLayout(HomepageLayoutTemplate):\n  def __init__(self, **properties):\n    # Set Form properties and Data Bindings.\n    self.init_components(**properties)\n    \n    # Any code you write here will run before the form opens.\n    self.check_upgrade_nav_link()\n\n    # TEMPLATE EXPLANATION ONLY - DELETE THIS WHEN YOU'RE READY\n    self.TEMPLATE_EXPLANATION()\n\n  def check_upgrade_nav_link(self):\n    self.user = anvil.users.get_user()\n    if self.user:\n      if self.user[\"subscription\"] == \"Free\" or not self.user[\"subscription\"]:\n        self.upgrade_navigation_link.visible = True\n      else:\n        self.upgrade_navigation_link.visible = False\n    else:\n      self.upgrade_navigation_link.visible = False\n\n # TEMPLATE EXPLANATION ONLY - DELETE THIS ENTIRE FUNCTION WHEN YOU'RE READY    \n  def TEMPLATE_EXPLANATION(self):\n    if not anvil.designer.in_designer:\n      if anvil.users.get_user() and anvil.users.get_user()[\"subscription\"] in PRODUCT_NAMES and not anvil.users.get_user()[\"cancel_subscription_at_period_end\"]:\n        Notification(\"With your subscription set up, you can now use the calculator. Check the Users module in the template's server modules and the client code user_permissions module to see how the user permissions work.\", title=\"Template Explanation\", timeout=None, style=\"warning\").show()\n      elif anvil.users.get_user() and anvil.users.get_user()[\"cancel_subscription_at_period_end\"]:\n        Notification(\"You've cancelled your subscription and, once it expires, your user records subscription status will be updated.\", title=\"Template Explanation\", timeout=None, style=\"warning\").show()\n        Notification(\"That's the tour of the app template complete. Now it's time for you to begin adding your own Stripe account details and finding out how to make the app your own.\", title=\"Template Explanation\", timeout=None, style=\"warning\").show()\n        # Notification(\"That's the tour of the app template complete. Now it's time for you to begin adding your own Stripe account details and finding out how to make the app your own.\", title=\"Template Explanation\", timeout=None, style=\"warning\").show()\n      else:\n        Notification(\"This is your SaaS product's main page. For this template, we've created a very simple calculator that requires a subscription to use. Try using the calculator.\", title=\"Template Explanation\", timeout=None, style=\"warning\").show()\n\n  def logout_navigation_link_click(self, **event_args):\n    \"\"\"This method is called when the component is clicked\"\"\"\n    anvil.users.logout()\n\n  def stripe_pricing_link_click(self, **event_args):\n    \"\"\"This method is called when the component is clicked\"\"\"\n    alert(StripePricing(), large=True)\n    self.check_upgrade_nav_link()\n\n  def form_show(self, **event_args):\n    self.check_upgrade_nav_link()\n    user = anvil.users.get_user()\n    if not user:\n      self.home_search_input.read_only = True\n      self.home_search_button.enabled = False\n      def prompt_login(*args, **kwargs):\n        Notification(\"Please log in to search for videos.\", timeout=3).show()\n        open_form('LoginPage')\n      self.home_search_input.set_event_handler('focus', prompt_login)\n      self.home_search_button.set_event_handler('click', prompt_login)\n    else:\n      self.home_search_input.read_only = False\n      self.home_search_button.enabled = True\n      self.home_search_input.set_event_handler('focus', None)\n      self.home_search_button.set_event_handler('click', self.home_search_button_click)\n\n  def home_search_button_click(self, **event_args):\n    query = self.home_search_input.text.strip()\n    self.home_search_results_panel.clear()\n    if not query:\n      Notification(\"Please enter a search query.\", timeout=3).show()\n      return\n    try:\n      results = anvil.server.call('search_youtube_videos', query)\n      if not results:\n        self.home_search_results_panel.add_component(Label(text=\"No results found.\"))\n        return\n      for video in results:\n        card = self._make_home_video_result_card(video)\n        self.home_search_results_panel.add_component(card)\n    except Exception as e:\n      Notification(f\"Error searching videos: {e}\", style=\"danger\", timeout=5).show()\n\n  def _make_home_video_result_card(self, video):\n    from anvil import ColumnPanel, Image, Text\n    panel = ColumnPanel()\n    img = Image(source=video['thumbnail'], width=160, height=90)\n    title = Text(text=video['title'], bold=True)\n    channel = Text(text=f\"Channel: {video['channel']}\", font_size=12)\n    panel.add_component(img)\n    panel.add_component(title)\n    panel.add_component(channel)\n    return panel\n\n"
+  components_by_slot:
+    nav_drawer: []
+    navigation:
+    - layout_properties: {}
+      name: calculator_navigation_link
+      properties: {icon: 'mi:calculate', navigate_to: Calculator, text: Calculator}
+      type: form:dep_gqlhr7sei7ys7:_Components.NavigationLink
+    - layout_properties: {}
+      name: transcription_practice_navigation_link
+      properties: {icon: 'mi:record_voice_over', navigate_to: TranscriptionPractice, text: Transcription Practice}
+      type: form:dep_gqlhr7sei7ys7:_Components.NavigationLink
+    - event_bindings: {click: stripe_pricing_link_click}
+      layout_properties: {}
+      name: pricing_navigation_link
+      properties: {icon: 'mi:attach_money', text: Pricing}
+      type: form:dep_gqlhr7sei7ys7:_Components.NavigationLink
+    - event_bindings: {click: stripe_pricing_link_click}
+      layout_properties: {}
+      name: upgrade_navigation_link
+      properties: {icon: 'mi:arrow_upward', text: Upgrade}
+      type: form:dep_gqlhr7sei7ys7:_Components.NavigationLink
+    - layout_properties: {}
+      name: account_navigation_link
+      properties: {icon: 'mi:person', navigate_to: AccountManagement, text: Account}
+      type: form:dep_gqlhr7sei7ys7:_Components.NavigationLink
+    - event_bindings: {click: logout_navigation_link_click}
+      layout_properties: {}
+      name: logout_navigation_link
+      properties: {icon: 'mi:logout', text: Log out}
+      type: form:dep_gqlhr7sei7ys7:_Components.NavigationLink
+    slot_2: []
+  id: '172183394744075593203136.70181'
+  is_package: true
+  layout:
+    properties: {show_sidesheet: false}
+    type: form:dep_gqlhr7sei7ys7:Layouts.NavigationDrawerLayout
+  layout_metadata: {title: Homepage Layout}
+  slots:
+    content_slot:
+      components:
+      - components:
+        - layout_properties: {slot: card-content-slot}
+          name: home_search_title
+          properties: {bold: true, font_size: 18, text: Search for Videos}
+          type: form:dep_gqlhr7sei7ys7:_Components.Text
+        - layout_properties: {slot: card-content-slot}
+          name: home_search_input
+          properties: {placeholder: Enter search keywords...}
+          type: form:dep_gqlhr7sei7ys7:_Components.TextBox
+        - layout_properties: {slot: card-content-slot}
+          name: home_search_button
+          properties: {icon: 'fa:search', role: filled, text: Search}
+          type: form:dep_gqlhr7sei7ys7:_Components.Button
+        - layout_properties: {slot: card-content-slot}
+          name: home_search_results_panel
+          properties: {}
+          type: form:dep_gqlhr7sei7ys7:_Components.ColumnPanel
+        layout_properties: {full_width_row: true}
+        name: home_search_card
+        properties:
+          margin: ['32', '0', '16', '0']
+          role: outlined
+        type: form:dep_gqlhr7sei7ys7:_Components.Card
+      index: 0
+      set_layout_properties: {}
+      target: {name: content, type: slot}
+- class_name: LoginPage
+  code: |-
+    from ._anvil_designer import LoginPageTemplate
+    from anvil import *
+    import anvil.users
+    import anvil.server
+    import anvil.tables as tables
+    import anvil.tables.query as q
+    from anvil.tables import app_tables
+
+    from ..Calculator import Calculator
+
+    class LoginPage(LoginPageTemplate):
+      def __init__(self, **properties):
+        # Set Form properties and Data Bindings.
+        self.init_components(**properties)
+
+        # Any code you write here will run before the form opens.
+
+      def login_button_click(self, **event_args):
+        """This method is called when the button is clicked"""
+        user = anvil.users.login_with_form(allow_cancel=True, show_signup_option=True, allow_remembered=True)
+        if user:
+          if user.get('subscription') and user['subscription'].lower() != 'free':
+            open_form('TranscriptionPractice')
+          else:
+            open_form('StripePricing')
+
+      def form_show(self, **event_args):
+        """This method is called when the HTML panel is shown on the screen"""
+        user = anvil.users.get_user()
+        if user:
+          if user.get('subscription') and user['subscription'].lower() != 'free':
+            open_form('TranscriptionPractice')
+          else:
+            open_form('StripePricing')
+        else:
+          Notification("Here's your SaaS app's login page. To start click login and then signup for an account.", title="Template Explanation", timeout=None, style="warning").show()
+  components:
+  - layout_properties: {grid_position: 'ZAMWZN,UKCBWI'}
+    name: rich_text_1
+    properties: {align: center, content: 'Welcome to Anvil''s SaaS template. For information on how to use this template, see our guide here: [https://anvil.works/learn/tutorials/using-saas-template](https://anvil.works/learn/tutorials/using-saas-template).', font_size: 26, foreground: '#3B4C66', role: italic}
+    type: RichText
+  - components:
+    - components:
+      - layout_properties: {slot: card-content-container-slot}
+        name: title
+        properties: {align: center, font_size: 26, scale: medium, text: 'Add your company name, tagline and/or logo here.'}
+        type: form:dep_gqlhr7sei7ys7:_Components.Text
+      - event_bindings: {click: login_button_click}
+        layout_properties: {slot: card-content-container-slot}
+        name: login_button
+        properties:
+          align: center
+          appearance: filled
+          spacing:
+            margin: ['10', null, null, null]
+          text: Login
+        type: form:dep_gqlhr7sei7ys7:_Components.Button
+      layout_properties: {slot: card-content-slot}
+      name: card_content_container_2
+      properties:
+        margin: ['64', '32', '64', '32']
+      type: form:dep_gqlhr7sei7ys7:_Components.Card.CardContentContainer
+    layout_properties: {grid_position: 'LHSAXB,CLLCJB'}
+    name: card_1
+    properties: {}
+    type: form:dep_gqlhr7sei7ys7:_Components.Card
+  container:
+    event_bindings: {show: form_show}
+    type: ColumnPanel
+  id: '1721839338292589321602334.4054'
+  is_package: true
+- class_name: StripePricing
+  code: |
+    from ._anvil_designer import StripePricingTemplate
+    from anvil import *
+    import anvil.server
+    import anvil.users
+    import anvil.tables as tables
+    import anvil.tables.query as q
+    from anvil.tables import app_tables
+
+
+    class StripePricing(StripePricingTemplate):
+      def __init__(self, **properties):
+        # Set Form properties and Data Bindings.
+        self.init_components(**properties)
+
+        # Any code you write here will run before the form opens.
+        pricing_table = self.dom_nodes['stripe-pricing-table']
+
+        # Passes the user's email to the Stripe checkout. This ensures records match in both Stripe and the app.
+        pricing_table.setAttribute("customer-email", anvil.users.get_user()["email"])
+  components: []
+  container:
+    properties: {html: ''}
+    type: HtmlTemplate
+  id: '1721834618690651542658275.706'
+  is_package: true
+- class_name: TranscriptionPractice
+  code: "from ._anvil_designer import TranscriptionPracticeTemplate\nfrom anvil import *\nimport anvil.server\nimport anvil.users\n\nclass TranscriptionPractice(TranscriptionPracticeTemplate):\n    def __init__(self, **properties):\n        self.init_components(**properties)\n        # UI and logic will be added in next steps \n\n    def search_button_click(self, **event_args):\n        query = self.search_input.text.strip()\n        self.search_results_panel.clear()\n        if not query:\n            Notification(\"Please enter a search query.\", timeout=3).show()\n            return\n        try:\n            results = anvil.server.call('search_youtube_videos', query)\n            if not results:\n                self.search_results_panel.add_component(Label(text=\"No results found.\"))\n                return\n            for video in results:\n                card = self._make_video_result_card(video)\n                self.search_results_panel.add_component(card)\n        except Exception as e:\n            Notification(f\"Error searching videos: {e}\", style=\"danger\", timeout=5).show()\n\n    def _make_video_result_card(self, video):\n        from anvil import ColumnPanel, Image, Text, Button\n        panel = ColumnPanel()\n        img = Image(source=video['thumbnail'], width=160, height=90)\n        title = Text(text=video['title'], bold=True)\n        channel = Text(text=f\"Channel: {video['channel']}\", font_size=12)\n        select_btn = Button(text=\"Select\", role=\"filled\", tag=video['id'])\n        select_btn.set_event_handler('click', self._video_select_click)\n        panel.add_component(img)\n        panel.add_component(title)\n        panel.add_component(channel)\n        panel.add_component(select_btn)\n        return panel\n\n    def _video_select_click(self, sender, **event_args):\n        video_id = sender.tag\n        try:\n            data = anvil.server.call('get_video_details_and_transcript', video_id, self.language_dropdown.selected_value.lower())\n            details = data['details']\n            transcript = data['transcript']\n            # Set video title\n            self.video_title.text = details['title']\n            # Embed YouTube player\n            embed_html = f'<iframe width=\"100%\" height=\"315\" src=\"{details[\"embed_url\"]}\" frameborder=\"0\" allowfullscreen></iframe>'\n            self.video_player_panel.content = embed_html\n            # Set transcript\n            self.transcription_input.text = ''\n            self.transcription_input.placeholder = transcript\n            # Show the card\n            self.video_transcription_card.visible = True\n        except Exception as e:\n            Notification(f\"Error loading video: {e}\", style=\"danger\", timeout=5).show()\n\n    def submit_button_click(self, **event_args):\n        user_text = self.transcription_input.text.strip()\n        actual_text = self.transcription_input.placeholder.strip()\n        if not user_text or not actual_text or actual_text.startswith('No transcript'):\n            Notification(\"Please select a video with a transcript and enter your transcription.\", timeout=3).show()\n            return\n        try:\n            result = anvil.server.call('compare_transcriptions', user_text, actual_text)\n            stats = f\"Total words: {result['total_words']}\\nYour words: {result['user_words']}\\nCorrect: {result['correct_words']}\\nAccuracy: {result['accuracy']:.1f}%\"\n            self.stats_content.text = stats\n            # Show diff as colored text\n            diff_html = ''\n            for w in result['diff']:\n                color = 'green' if w['correct'] else 'red'\n                diff_html += f\"<span style='color:{color}'>{w['word']}</span> \"\n            self.result_container.text = diff_html\n            self.result_container.visible = True\n        except Exception as e:\n            Notification(f\"Error comparing transcription: {e}\", style=\"danger\", timeout=5).show()\n\n    def form_show(self, **event_args):\n        user = anvil.users.get_user()\n        if not user:\n            Notification(\"Please log in to access transcription practice.\", timeout=3).show()\n            open_form('LoginPage')\n            return\n        if not user.get('subscription') or user['subscription'].lower() == 'free':\n            Notification(\"You need an active subscription to access this page.\", timeout=3).show()\n            open_form('StripePricing')\n            return "
+  components:
+  - components:
+    - layout_properties: {slot: card-content-slot}
+      name: title_text
+      properties: {align: left, bold: true, font_size: 24, text: Transcription Practice}
+      type: form:dep_gqlhr7sei7ys7:_Components.Text
+    - layout_properties: {slot: card-content-slot}
+      name: language_dropdown
+      properties:
+        align: right
+        items: [EN, ES]
+        selected_value: EN
+        width: 100
+      type: form:dep_gqlhr7sei7ys7:_Components.Dropdown
+    layout_properties: {full_width_row: true, grid_position: A}
+    name: top_bar_card
+    properties:
+      margin: ['16', '0', '16', '0']
+      role: elevated
+    type: form:dep_gqlhr7sei7ys7:_Components.Card
+  - components:
+    - layout_properties: {slot: card-content-slot}
+      name: search_title
+      properties: {bold: true, font_size: 18, text: Search for Videos}
+      type: form:dep_gqlhr7sei7ys7:_Components.Text
+    - layout_properties: {slot: card-content-slot}
+      name: search_input
+      properties: {placeholder: Enter search keywords...}
+      type: form:dep_gqlhr7sei7ys7:_Components.TextBox
+    - layout_properties: {slot: card-content-slot}
+      name: search_button
+      properties: {icon: 'fa:search', role: filled, text: Search}
+      type: form:dep_gqlhr7sei7ys7:_Components.Button
+    - layout_properties: {slot: card-content-slot}
+      name: search_results_panel
+      properties: {}
+      type: form:dep_gqlhr7sei7ys7:_Components.ColumnPanel
+    layout_properties: {full_width_row: true}
+    name: search_card
+    properties:
+      margin: ['0', '0', '16', '0']
+      role: outlined
+    type: form:dep_gqlhr7sei7ys7:_Components.Card
+  - components:
+    - components:
+      - components:
+        - name: video_title
+          properties: {bold: true, font_size: 16, text: Video Title}
+          type: form:dep_gqlhr7sei7ys7:_Components.Text
+        - name: video_player_panel
+          properties: {height: 315}
+          type: form:dep_gqlhr7sei7ys7:_Components.HtmlPanel
+        name: video_column
+        properties: {width: 6}
+        type: form:dep_gqlhr7sei7ys7:_Components.Column
+      - components:
+        - name: transcription_title
+          properties: {bold: true, font_size: 16, text: Transcription}
+          type: form:dep_gqlhr7sei7ys7:_Components.Text
+        - name: transcription_input
+          properties: {placeholder: Type your transcription here..., rows: 10}
+          type: form:dep_gqlhr7sei7ys7:_Components.TextArea
+        name: transcription_column
+        properties: {width: 6}
+        type: form:dep_gqlhr7sei7ys7:_Components.Column
+      name: video_transcription_columns
+      properties: {spacing_above: small, spacing_below: small}
+      type: form:dep_gqlhr7sei7ys7:_Components.ColumnPanel
+    - components:
+      - components:
+        - name: pause_delay_label
+          properties: {text: Pause Delay}
+          type: form:dep_gqlhr7sei7ys7:_Components.Text
+        - name: pause_delay_dropdown
+          properties:
+            items: [0 seconds, 1 second, 2 seconds, 3 seconds, 5 seconds]
+            selected_value: 0 seconds
+          type: form:dep_gqlhr7sei7ys7:_Components.Dropdown
+        - name: rewind_time_label
+          properties: {text: Rewind Time}
+          type: form:dep_gqlhr7sei7ys7:_Components.Text
+        - name: rewind_time_dropdown
+          properties:
+            items: [0.0 seconds, 0.25 seconds, 0.5 seconds, 0.75 seconds, 1 second, 1.5 seconds, 2 seconds, 3 seconds, 5 seconds, 8 seconds, 10 seconds]
+            selected_value: 0.0 seconds
+          type: form:dep_gqlhr7sei7ys7:_Components.Dropdown
+        - name: rewind_button
+          properties: {role: outlined, text: Rewind}
+          type: form:dep_gqlhr7sei7ys7:_Components.Button
+        - name: play_stop_button
+          properties: {role: filled, text: Play}
+          type: form:dep_gqlhr7sei7ys7:_Components.Button
+        - name: submit_button
+          properties: {background: primary, role: filled, text: Submit Transcription}
+          type: form:dep_gqlhr7sei7ys7:_Components.Button
+        name: controls_column
+        properties: {width: 6}
+        type: form:dep_gqlhr7sei7ys7:_Components.Column
+      - components:
+        - name: stats_title
+          properties: {bold: true, font_size: 16, text: Stats}
+          type: form:dep_gqlhr7sei7ys7:_Components.Text
+        - name: stats_content
+          properties: {align: left, text: ''}
+          type: form:dep_gqlhr7sei7ys7:_Components.Label
+        - name: results_title
+          properties: {bold: true, font_size: 16, text: Transcription Results}
+          type: form:dep_gqlhr7sei7ys7:_Components.Text
+        - name: result_container
+          properties: {align: left, text: '', visible: false}
+          type: form:dep_gqlhr7sei7ys7:_Components.Label
+        name: stats_column
+        properties: {width: 6}
+        type: form:dep_gqlhr7sei7ys7:_Components.Column
+      name: controls_stats_panel
+      properties: {spacing_above: small, spacing_below: small}
+      type: form:dep_gqlhr7sei7ys7:_Components.ColumnPanel
+    layout_properties: {full_width_row: true}
+    name: video_transcription_card
+    properties:
+      margin: ['0', '0', '16', '0']
+      role: elevated
+      visible: false
+    type: form:dep_gqlhr7sei7ys7:_Components.Card
+  container: {type: ColumnPanel}
+  id: auto-generated-id-TranscriptionPractice
+  is_package: true
+metadata: {description: 'For information on how to use this template, see our guide here: https://anvil.works/learn/tutorials/using-saas-template'}
+modules:
+- code: "import anvil.server\nimport anvil.users\nimport anvil.tables as tables\nimport anvil.tables.query as q\nfrom anvil.tables import app_tables\nfrom anvil import Notification, alert\n  \n# A decorator function to display notifications that encourage people to upgrade\ndef catch_permission_errors(func):\n  def wrapper(self, *args, **kargs):\n    try:\n      return func(self)\n    except anvil.server.PermissionDenied:\n      # TEMPLATE EXPLANATION ONLY - DELETE THIS NOTIFICATION WHEN YOU'RE READY\n      Notification(\"Without a subscription, the calculator's function fails and users are shown a notification asking them to upgrade.\", title=\"Template Explanation\", timeout=None, style=\"warning\").show()\n      \n      Notification(\"Please upgrade your subscription to use this functionality.\", title=\"Please upgrade your subscription\", timeout=None).show()\n      \n      # TEMPLATE EXPLANATION ONLY - DELETE THIS NOTIFICATION WHEN YOU'RE READY\n      Notification(\"Click on the upgrade button in the top left to be taken to Stripe's pricing page for this app\", title=\"Template Explanation\", timeout=None, style=\"warning\").show()\n    except anvil.users.AuthenticationFailed:\n      Notification(\"Please log in to use this functionality.\", title=\"Please log in\", timeout=3).show()\n  wrapper.__name__ = func.__name__ # Preserve the name of the decorated function\n  return wrapper\n  \n  "
+  id: '1721839019330205569959987.51782'
+  name: user_permissions
+name: anvil-v6
+native_deps: null
+package_name: anvil_v6
+renamed: true
+runtime_options:
+  client_version: '3'
+  legacy_features: {}
+  server_spec: {base: python310-standard, requirements: stripe}
+  server_version: python3-sandbox
+  version: 3
+scripts: []
+secrets:
+  stripe_secret_api_key:
+    type: secret
+    value: {T4O5IQ35ZG7TTCZN: wKicTXysluYtsuFwBYK31Uq1YhX3Xedua/2NOqMILkSdO+vxMTel49STEStiie3I198EXBvuY9xYDXsH1ni1QdXB96Kst9LZm0JMPiNzyPn3kEAMu6wKSLB39Mc3uP+YZt/l/vsmDWREQ+FtgXcekPdaGAZJPMa4G+5eGTfURDdpD2Ifi5ezUtEX/VrBi41ZjLIVgYjzoLQS2s7VqDdqWUaAIzXUrCN5vR9y2LNszbSWQLTzrDBmIqz6ZKeAzricQdAez22e0SPYPg==}
+server_modules:
+- code: |-
+    import anvil.email
+    import anvil.secrets
+    import anvil.users
+    import anvil.tables as tables
+    import anvil.tables.query as q
+    from anvil.tables import app_tables
+    import anvil.server
+
+    from .Users import user_has_subscription
+
+    # Here's an example of a function that would require a paid subsciption
+    @anvil.server.callable(require_user=user_has_subscription(["personal"]))
+    def calculate_percentage_of(number, total_number):
+        percentage = (int(number) / int(total_number)) * 100
+        return percentage
+  id: '1721839103861525202133101.95264'
+  name: Product
+- code: "import anvil.email\nimport anvil.secrets\nimport anvil.users\nimport anvil.tables as tables\nimport anvil.tables.query as q\nfrom anvil.tables import app_tables\nimport anvil.server\n\nimport stripe\nimport json\n\nimport datetime\n\n# Set your secret key. Remember to switch to your live secret key in production.\n# See your keys here: https://dashboard.stripe.com/apikeys\nstripe.api_key = anvil.secrets.get_secret('stripe_secret_api_key')\n\n# This is predicated on a flat 1:1 Product:Price relationship\ndef get_prices():\n  # Retrieve all prices\n  prices = stripe.Price.list()\n\n  # Extract and return the prices with product names\n  prices_with_product_details = {}\n  for price in prices.data:\n      product = stripe.Product.retrieve(price.product)\n      product_info = {\n        \"product_name\": product.name,\n        \"product_id\": price.product\n      }\n      prices_with_product_details[price.id] = product_info\n  return prices_with_product_details\n\n# TEMPLATE EXPLANATION ONLY - DELETE THIS FUNCTION WHEN YOU'RE READY \n@anvil.server.callable\ndef get_product_names():\n  try:\n      # Retrieve a list of products from the Stripe API\n      products = stripe.Product.list()  # You can adjust the limit as needed\n      # Extract product names from the response\n      product_names = [product.name for product in products]\n      return product_names\n\n  except stripe.error.StripeError as e:\n      print(f\"Error: {e}\")\n      return []\n  \n@anvil.server.callable(require_user=True)\ndef delete_stripe_customer(stripe_id):\n  # Need to raise an exception here if the subscription isn't deleted\n  try:\n    stripe.Customer.delete(stripe_id)\n  except Exception as e:\n    print(\"Error when deleting user: \", e, \"\\nUser ID: \", user.get_id())\n\n@anvil.server.http_endpoint('/stripe/stripe_customer_created')\ndef stripe_customer_created():\n  # Get the Stripe Customer ID\n  payload_json = json.loads(anvil.server.request.body.get_bytes())\n\n  # Make sure the event is in a format we expect\n  try:\n    event = stripe.Event.construct_from(\n      payload_json, stripe.api_key\n    )\n  except ValueError as e:\n    # Invalid payload\n    return anvil.server.HttpResponse(400)\n  \n  stripe_customer_id = payload_json.get(\"data\").get(\"object\").get(\"id\")\n\n  # Get the Anvil user's row ID and transform it to work with Stripes API\n  stripe_customer_email = payload_json.get(\"data\").get(\"object\").get(\"email\")\n  user_row = app_tables.users.get(email=stripe_customer_email)\n  user_row_id = user_row.get_id()\n  transformed_user_row_id = user_row_id[1:-1].replace(\",\", \"_\")\n\n  # Update the customer record, so the row_id is always available\n  stripe.Customer.modify(\n    stripe_customer_id,\n    metadata={\"anvil_user_row_id\": transformed_user_row_id},\n  )\n\n  # Update the user record in the Anvil app to include the Stripe Customer ID\n  user_row.update(stripe_id=stripe_customer_id)\n  print(\"user row updated: \", datetime.datetime.now())\n\n@anvil.server.http_endpoint('/stripe/stripe_subscription_updated')\ndef stripe_subscription_updated():\n  # Here we want to look for \"customer.subscription.updated\" because this event is what shows whether a subscription is valid or not. Events like \"customer.subscription.created\" are similar but are called before a charge is attempted and is usually followed by \"customer.subscription.updated\".\n\n  payload_json = json.loads(anvil.server.request.body.get_bytes())\n\n  # Make sure the event is in a format we expect\n  try:\n    event = stripe.Event.construct_from(\n      payload_json, stripe.api_key\n    )\n  except ValueError as e:\n    # Invalid payload\n    return anvil.server.HttpResponse(400)\n  \n  # Need to get the users record from the DB based on the subscription objects \"customer\" field\n  stripe_customer_id = payload_json.get(\"data\").get(\"object\").get(\"customer\")\n\n  stripe_customer = stripe.Customer.retrieve(\n      stripe_customer_id\n    )\n  stripe_customer_email = stripe_customer[\"email\"]\n  user = app_tables.users.get(email=stripe_customer_email)\n\n  # Check the subscription objects status: https://stripe.com/docs/api/subscriptions/object#subscription_object-status\n  subscription_status = payload_json.get(\"data\").get(\"object\").get(\"status\")\n  # If the subscription status is \"Active\"\n  if subscription_status == \"active\":\n    price_id_of_plan = payload_json.get(\"data\").get(\"object\").get(\"items\").get(\"data\")[0].get(\"price\").get(\"id\")\n    \n    stripe_price_list = get_prices()\n    \n    # Check the price/plan and update the user record in the DB accordingly\n    if price_id_of_plan in stripe_price_list:\n        user[\"subscription\"] = stripe_price_list[price_id_of_plan].get(\"product_name\")\n    \n    if payload_json.get(\"data\").get(\"object\").get(\"cancel_subscription_at_period_end\"):\n      user[\"cancel_subscription_at_period_end\"] = True\n    else:\n      user[\"cancel_subscription_at_period_end\"] = False\n      \n  elif subscription_status == \"past_due\":\n    anvil.email.send(from_name = \"My SaaS app\", \n                 to = \"\",\n                 subject = \"Subscription Past Due\",\n                 text = f\"\"\"\n                 A user's subscription payment has failed.\n                 Email: {user[\"email\"]}\n                 Stripe Customer ID: {stripe_customer_id}                 \n                 \"\"\"\n                 )\n    user[\"subscription\"] = \"expired\"\n  else:\n    user[\"subscription\"] = \"expired\"\n\n  anvil.server.HttpResponse(200)"
+  id: '1721839056586406793254106.41296'
+  name: StripeFunctions
+- code: "import anvil.server\nimport requests\nfrom youtube_transcript_api import YouTubeTranscriptApi, TranscriptsDisabled, NoTranscriptFound\nimport re\n\nYOUTUBE_API_KEY = 'AIzaSyAhj_M7HmHGlsEU8WK-NmOAKbGbhxs_ua8'  # TODO: Move to secrets\n\n@anvil.server.callable\ndef search_youtube_videos(query, max_results=10):\n    \"\"\"Search YouTube for videos matching the query.\"\"\"\n    url = 'https://www.googleapis.com/youtube/v3/search'\n    params = {\n        'part': 'snippet',\n        'q': query,\n        'type': 'video',\n        'maxResults': max_results,\n        'key': YOUTUBE_API_KEY\n    }\n    response = requests.get(url, params=params)\n    response.raise_for_status()\n    data = response.json()\n    videos = []\n    for item in data.get('items', []):\n        videos.append({\n            'id': item['id']['videoId'],\n            'title': item['snippet']['title'],\n            'thumbnail': item['snippet']['thumbnails']['medium']['url'],\n            'channel': item['snippet']['channelTitle'],\n            'published_at': item['snippet']['publishedAt']\n        })\n    return videos\n\n@anvil.server.callable\ndef get_video_details_and_transcript(video_id, language='en'):\n    \"\"\"Fetch video details and transcript.\"\"\"\n    # Fetch video details\n    url = 'https://www.googleapis.com/youtube/v3/videos'\n    params = {\n        'part': 'snippet,contentDetails',\n        'id': video_id,\n        'key': YOUTUBE_API_KEY\n    }\n    response = requests.get(url, params=params)\n    response.raise_for_status()\n    data = response.json()\n    if not data.get('items'):\n        raise Exception('Video not found')\n    video = data['items'][0]\n    details = {\n        'video_id': video_id,\n        'title': video['snippet']['title'],\n        'channel': video['snippet']['channelTitle'],\n        'description': video['snippet']['description'],\n        'embed_url': f\"https://www.youtube.com/embed/{video_id}\",\n        'duration': video['contentDetails']['duration']\n    }\n    # Fetch transcript\n    try:\n        transcript_data = YouTubeTranscriptApi.get_transcript(video_id, languages=[language, 'en'])\n        transcript = ' '.join([entry['text'] for entry in transcript_data])\n        timestamps = [entry['start'] for entry in transcript_data for _ in entry['text'].split()]\n    except (TranscriptsDisabled, NoTranscriptFound):\n        transcript = \"No transcript available for this video.\"\n        timestamps = []\n    except Exception as e:\n        transcript = f\"Transcript error: {e}\"\n        timestamps = []\n    return {'details': details, 'transcript': transcript, 'timestamps': timestamps}\n\ndef normalize_text(text):\n    text = re.sub(r'[^\\w\\s]', '', text)\n    text = re.sub(r'\\s+', ' ', text).strip().lower()\n    return text\n\n@anvil.server.callable\ndef compare_transcriptions(user_transcription, actual_transcript):\n    \"\"\"Compare user transcription to actual transcript and return stats/results.\"\"\"\n    user_words = normalize_text(user_transcription).split()\n    actual_words = normalize_text(actual_transcript).split()\n    correct = sum(1 for u, a in zip(user_words, actual_words) if u == a)\n    total = len(actual_words)\n    accuracy = (correct / total * 100) if total else 0\n    # Simple diff: mark correct/incorrect words\n    diff = []\n    for i, word in enumerate(user_words):\n        if i < len(actual_words) and word == actual_words[i]:\n            diff.append({'word': word, 'correct': True})\n        else:\n            diff.append({'word': word, 'correct': False})\n    return {\n        'total_words': total,\n        'user_words': len(user_words),\n        'correct_words': correct,\n        'accuracy': accuracy,\n        'diff': diff\n    } "
+  id: RLBR4LPPCTNSJPGWTWI4ZGGFW76SRWWF
+  name: TranscriptionPractice
+- code: |
+    import anvil.server
+
+    def normalize_words(text):
+      return text.lower().replace(".", "").replace(",", "").replace("!", "").replace("?", "").split()
+
+    class SmartComparer:
+      def __init__(self, user_input, official_transcript):
+        self.user_words = normalize_words(user_input)
+        self.official_words = normalize_words(official_transcript)
+        self.result = ""
+        self.correct = 0
+        self.incorrect = 0
+        self.missing = 0
+
+        def compare(self):
+          i, j = 0, 0
+          while j < len(self.official_words) or i < len(self.user_words):
+            if i < len(self.user_words) and j < len(self.official_words) and self.user_words[i] == self.official_words[j]:
+              self.result += f"<span style='color: lightgreen'>{self.official_words[j]}</span> "
+              self.correct += 1
+              i += 1
+              j += 1
+              continue
+
+              realigned = False
+            for offset in range(1, 4):
+              if i + offset < len(self.user_words) and j + offset < len(self.official_words):
+                if self.user_words[i + offset] == self.official_words[j + offset]:
+                  for k in range(offset):
+                    if j + k < len(self.official_words):
+                      self.result += f"<span style='color: lightblue'>{self.official_words[j + k]}</span> "
+                      self.missing += 1
+                      i += offset
+                  j += offset
+                  realigned = True
+                  break
+
+                if realigned:
+                  continue
+
+            if i < len(self.user_words):
+              self.result += f"<span style='color: lightcoral'>{self.user_words[i]}</span> "
+              self.incorrect += 1
+              i += 1
+
+              if j < len(self.official_words):
+                self.result += f"<span style='color: lightblue'>{self.official_words[j]}</span> "
+                self.missing += 1
+                j += 1
+
+            total = self.correct + self.incorrect + self.missing
+          accuracy = round((self.correct / total) * 100) if total else 0
+          return {
+            "html": self.result.strip(),
+            "stats": {
+              "accuracy": accuracy,
+              "correct": self.correct,
+              "incorrect": self.incorrect,
+              "missing": self.missing,
+              "total": total
+            }
+          }
+
+    @anvil.server.callable
+    def compare_transcriptions(user_text, official_text):
+      return SmartComparer(user_text, official_text).compare()
+  id: '1746466221705997467306556.2155'
+  name: TranscriptionService
+- code: "import anvil.email\nimport anvil.secrets\nimport anvil.users\nimport anvil.tables as tables\nimport anvil.tables.query as q\nfrom anvil.tables import app_tables\nimport anvil.server\n\nimport stripe\n\n# Set your secret key. Remember to switch to your live secret key in production.\n# See your keys here: https://dashboard.stripe.com/apikeys\nstripe.api_key = anvil.secrets.get_secret('stripe_secret_api_key')\n\n# @anvil.server.callable's require_user argument takes either a Boolean value. If the Boolean is True, the user has permission to run the decorated function.\n# We can pass require_user a function which evaluates to True or False but we cannot pass any arguments to that function\n# To get around this, we can pass require_user a higher order function - user_has_subscription - which returns an evaluated function verify_subscription\n# user_has_subscription can accept arguments, use them in verify_subscription and return the evaluated verify_subscription function\n# so, if we call @anvil.server.callable(require_user=user_has_subscription([\"pro\"])), the decorator calls user_has_subscription which returns an evaluated function object that require_user can use\n# verify_subscription receives the currently logged-in user object from @anvil.server.callable automatically\n# See the Product Server Module to see it in use\ndef user_has_subscription(allowed_subscriptions):\n    def verify_subscription(user):\n        # Return true if user has subscription in allowed subscriptions\n        return user[\"subscription\"] and user[\"subscription\"].lower() in [subscription.lower() for subscription in allowed_subscriptions]\n    return verify_subscription\n\n\n@anvil.server.callable(require_user=True)\ndef change_name(name):\n  user = anvil.users.get_user()\n  user[\"name\"] = name\n  return user\n\n@anvil.server.callable(require_user=True)\ndef change_email(email):\n  user = anvil.users.get_user()\n  try:\n    customer = stripe.Customer.modify(\n        user[\"stripe_id\"],\n        email=email\n    )\n    user[\"email\"] = email\n    print(\"Customer email updated successfully:\", customer)\n  except stripe.error.StripeError as e:\n      print(\"Stripe API error:\", e)\n  except Exception as e:\n      print(\"An error occurred when updating a user's email:\", e)\n  return user\n\n@anvil.server.callable(require_user=True)\ndef delete_user():\n  user = anvil.users.get_user()\n  if user[\"stripe_id\"]:\n    try: \n      deleted_customer = stripe.Customer.delete(user[\"stripe_id\"])\n      user.delete()\n      print(f\"Customer {user['stripe_id']} deleted successfully:\", deleted_customer)\n    except stripe.error.StripeError as e:\n      print(\"Stripe API error:\", e)\n    except Exception as e:\n      print(\"An unexpected error occurred:\", e)\n  else:\n    user.delete()\n\n\n"
+  id: '1721839093380176159741914.9996'
+  name: Users
+services:
+- client_config: {}
+  server_config: {}
+  source: /runtime/services/tables.yml
+- client_config: {allow_remember_me: true, allow_signup: true, confirm_email: false, enable_automatically: true, remember_me_days: 30, use_email: true}
+  server_config: {user_table: users}
+  source: /runtime/services/anvil/users.yml
+- client_config: {}
+  server_config: {}
+  source: /runtime/services/anvil/secrets.yml
+- client_config: {}
+  server_config: {}
+  source: /runtime/services/anvil/email.yml
+startup: {module: LoginPage, type: form}
+startup_form: null
+theme:
+  assets:
+  - {content: LmFudmlsLXJvbGUtaXRhbGljIHsKICBmb250LXN0eWxlOiBpdGFsaWM7Cn0=, id: SN3X4TDB4P3RZGACFTNERZ5SCAYITUYT, name: theme.css}
+  parameters:
+    color_scheme:
+      colors:
+      - {color: '#006874', name: Primary}
+      - {color: '#96F0FF', name: Primary Container}
+      - {color: '#FFFFFF', name: On Primary}
+      - {color: '#001F24', name: On Primary Container}
+      - {color: '#4A6267', name: Secondary}
+      - {color: '#CDE7EC', name: Secondary Container}
+      - {color: '#051F23', name: On Secondary Container}
+      - {color: '#FFFFFF', name: On Secondary}
+      - {color: '#535E7E', name: Tertiary}
+      - {color: '#DAE2FF', name: Tertiary Container}
+      - {color: '#FFFFFF', name: On Tertiary}
+      - {color: '#0F1A37', name: On Tertiary Container}
+      - {color: '#BA1A1A', name: Error}
+      - {color: '#FBFCFD', name: Background}
+      - {color: '#F8FAFA', name: Surface}
+      - {color: '#191C1D', name: On Background}
+      - {color: '#191C1D', name: On Surface}
+      - {color: '#DBE4E6', name: Surface Variant}
+      - {color: '#3F484A', name: On Surface Variant}
+      - {color: '#6F797A', name: Outline}
+      - {color: 'rgba(25, 28, 29, 0.38)', name: On Disabled}
+      - {color: 'rgba(25, 28, 29, 0.12)', name: Disabled Container}
+      - {color: 'rgba(255, 255, 255, 0.08)', name: Light Overlay 1}
+      - {color: 'rgba(255, 255, 255, 0.12)', name: Light Overlay 2}
+      - {color: 'rgba(3, 31, 35, 0.08)', name: Dark Overlay 1}
+      - {color: 'rgba(3, 31, 35, 0.12)', name: Dark Overlay 2}
+      - {color: 'rgba(0, 104, 116, 0.05)', name: Primary Overlay 1}
+      - {color: 'rgba(0, 104, 116, 0.08)', name: Primary Overlay 2}
+      - {color: 'rgba(0, 104, 116, 0.11)', name: Primary Overlay 3}
+      - {color: '#BFC8CA', name: Outline Variant}
+      - {color: '#FFFFFF', name: On Error}
+      - {color: '#F2F4F4', name: Surface Container Low}
+      - {color: '#E3E9EA', name: Surface Container High}
+      - {color: '#E1E3E3', name: Surface Container Highest}
+      - {color: 'rgba(25, 28, 29, 0.04)', name: Disabled Container 2}
+      - {color: 'rgba(186, 26, 26, 0.08)', name: Error Overlay 1}
+      - {color: 'rgba(186, 26, 26, 0.12)', name: Error Overlay 2}
+      - {color: 'rgba(3, 31, 35, 0.16)', name: Dark Overlay 3}
+      - {color: '#410002', name: On Error Container}
+      - {color: '#ECEEEF', name: Surface Container}
+      - {color: '#2E3132', name: Inverse Surface}
+      - {color: '#EFF1F1', name: Inverse On Surface}
+      - {color: 'rgba(219,228,230, 0.08)', name: On Surface Variant Overlay 1}
+      - {color: 'rgba(219,228,230, 0.12)', name: On Surface Variant Overlay 2}
+      - {color: 'rgba(239,241,241, 0.08)', name: Inverse On Surface Overlay 1}
+      - {color: 'rgba(239,241,241, 0.12)', name: Inverse On Surface Overlay 2}
+      preset_groups:
+      - name: Colour Scheme
+        options:
+        - colors:
+          - {color: '#6750A4', name: Primary}
+          - {color: '#EADDFF', name: Primary Container}
+          - {color: '#FFFFFF', name: On Primary}
+          - {color: '#21005E', name: On Primary Container}
+          - {color: '#625B71', name: Secondary}
+          - {color: '#E8DEF8', name: Secondary Container}
+          - {color: '#FFFFFF', name: On Secondary}
+          - {color: '#1E192B', name: On Secondary Container}
+          - {color: '#7D5260', name: Tertiary}
+          - {color: '#FFD8E4', name: Tertiary Container}
+          - {color: '#FFFFFF', name: On Tertiary}
+          - {color: '#370B1E', name: On Tertiary Container}
+          - {color: '#B3261E', name: Error}
+          - {color: '#FFFBFE', name: Background}
+          - {color: '#FFFBFE', name: Surface}
+          - {color: '#1C1B1F', name: On Background}
+          - {color: '#1C1B1F', name: On Surface}
+          - {color: '#E7E0EC', name: Surface Variant}
+          - {color: '#49454E', name: On Surface Variant}
+          - {color: '#79747E', name: Outline}
+          - {color: 'rgba(28, 27, 31, 0.38)', name: On Disabled}
+          - {color: 'rgba(28, 27, 31, 0.12)', name: Disabled Container}
+          - {color: 'rgba(255, 255, 255, 0.08)', name: Light Overlay 1}
+          - {color: 'rgba(255, 255, 255, 0.12)', name: Light Overlay 2}
+          - {color: 'rgba(30, 25, 43, 0.08)', name: Dark Overlay 1}
+          - {color: 'rgba(30, 25, 43, 0.12)', name: Dark Overlay 2}
+          - {color: 'rgba(103, 80, 164, 0.05)', name: Primary Overlay 1}
+          - {color: 'rgba(103, 80, 164, 0.08)', name: Primary Overlay 2}
+          - {color: 'rgba(103, 80, 164, 0.11)', name: Primary Overlay 3}
+          name: Material Light
+        - colors:
+          - {color: '#D0BCFF', name: Primary}
+          - {color: '#4F378B', name: Primary Container}
+          - {color: '#371E73', name: On Primary}
+          - {color: '#EADDFF', name: On Primary Container}
+          - {color: '#CCC2DC', name: Secondary}
+          - {color: '#4A4458', name: Secondary Container}
+          - {color: '#332D41', name: On Secondary}
+          - {color: '#E8DEF8', name: On Secondary Container}
+          - {color: '#EFB8C8', name: Tertiary}
+          - {color: '#633B48', name: Tertiary Container}
+          - {color: '#492532', name: On Tertiary}
+          - {color: '#FFD8E4', name: On Tertiary Container}
+          - {color: '#F2B8B5', name: Error}
+          - {color: '#1C1B1F', name: Background}
+          - {color: '#1C1B1F', name: Surface}
+          - {color: '#E6E1E5', name: On Background}
+          - {color: '#E6E1E5', name: On Surface}
+          - {color: '#49454F', name: Surface Variant}
+          - {color: '#CAC4D0', name: On Surface Variant}
+          - {color: '#938F99', name: Outline}
+          - {color: 'rgba(230, 225, 229, 0.38)', name: On Disabled}
+          - {color: 'rgba(230, 225, 229, 0.12)', name: Disabled Container}
+          - {color: 'rgba(232, 222, 248, 0.08)', name: Light Overlay 1}
+          - {color: 'rgba(232, 222, 248, 0.12)', name: Light Overlay 2}
+          - {color: 'rgba(232, 222, 248, 0.08)', name: Dark Overlay 1}
+          - {color: 'rgba(232, 222, 248, 0.12)', name: Dark Overlay 2}
+          - {color: 'rgba(208, 188, 255, 0.05)', name: Primary Overlay 1}
+          - {color: 'rgba(208, 188, 255, 0.08)', name: Primary Overlay 2}
+          - {color: 'rgba(208, 188, 255, 0.11)', name: Primary Overlay 3}
+          name: Material Dark
+        - colors:
+          - {color: '#1EB980', name: Primary}
+          - {color: '#005235', name: Primary Container}
+          - {color: '#003824', name: On Primary}
+          - {color: '#73FBBC', name: On Primary Container}
+          - {color: '#B4CCBC', name: Secondary}
+          - {color: '#364B3F', name: Secondary Container}
+          - {color: '#20352A', name: On Secondary}
+          - {color: '#D0E8D8', name: On Secondary Container}
+          - {color: '#A4CDDD', name: Tertiary}
+          - {color: '#234C5A', name: Tertiary Container}
+          - {color: '#063542', name: On Tertiary}
+          - {color: '#C0E9FA', name: On Tertiary Container}
+          - {color: '#D64D47', name: Error}
+          - {color: '#191C1A', name: Background}
+          - {color: '#191C1A', name: Surface}
+          - {color: '#E1E3DF', name: On Background}
+          - {color: '#E1E3DF', name: On Surface}
+          - {color: '#404943', name: Surface Variant}
+          - {color: '#C0C9C1', name: On Surface Variant}
+          - {color: '#8A938C', name: Outline}
+          - {color: 'rgba(208, 232, 216, 0.2)', name: Dark Overlay 1}
+          - {color: 'rgba(208, 232, 216, 0.5)', name: Dark Overlay 2}
+          - {color: 'rgba(208, 232, 216, 0.2)', name: Light Overlay 1}
+          - {color: 'rgba(208, 232, 216, 0.5)', name: Light Overlay 2}
+          - {color: 'rgba(133, 133, 139, 0.12)', name: Disabled Container}
+          - {color: '#85858B', name: On Disabled}
+          - {color: 'rgba(30, 185, 128, 0.05)', name: Primary Overlay 1}
+          - {color: 'rgba(30, 185, 128, 0.08)', name: Primary Overlay 2}
+          - {color: 'rgba(30, 185, 128, 0.11)', name: Primary Overlay 3}
+          name: Rally Dark
+        - colors:
+          - {color: '#006C48', name: Primary}
+          - {color: '#00A36C', name: Primary Container}
+          - {color: '#FFFFFF', name: On Primary}
+          - {color: '#002113', name: On Primary Container}
+          - {color: '#496455', name: Secondary}
+          - {color: '#CBEAD6', name: Secondary Container}
+          - {color: '#FFFFFF', name: On Secondary}
+          - {color: '#052014', name: On Secondary Container}
+          - {color: '#326576', name: Tertiary}
+          - {color: '#B8EAFF', name: Tertiary Container}
+          - {color: '#FFFFFF', name: On Tertiary}
+          - {color: '#001F28', name: On Tertiary Container}
+          - {color: '#D64D47', name: Error}
+          - {color: '#FBFDF8', name: Background}
+          - {color: '#FBFDF8', name: Surface}
+          - {color: '#191C1A', name: On Background}
+          - {color: '#191C1A', name: On Surface}
+          - {color: '#DCE5DD', name: Surface Variant}
+          - {color: '#404943', name: On Surface Variant}
+          - {color: '#707973', name: Outline}
+          - {color: 'rgba(5, 32, 20, 0.8)', name: Dark Overlay 1}
+          - {color: 'rgba(51, 51, 61, 0.12)', name: Dark Overlay 2}
+          - {color: 'rgba(255, 255, 255, 0.8)', name: Light Overlay 1}
+          - {color: 'rgba(255, 255, 255, 0.12)', name: Light Overlay 2}
+          - {color: 'rgba(25, 28, 26, 0.12)', name: Disabled Container}
+          - {color: 'rgba(25, 28, 26, 0.38)', name: On Disabled}
+          - {color: 'rgba(0, 108, 72, 0.05)', name: Primary Overlay 1}
+          - {color: 'rgba(0, 108, 72, 0.08)', name: Primary Overlay 2}
+          - {color: 'rgba(0, 108, 72, 0.11)', name: Primary Overlay 3}
+          name: Rally Light
+        - colors:
+          - {color: '#006874', name: Primary}
+          - {color: '#96F0FF', name: Primary Container}
+          - {color: '#FFFFFF', name: On Primary}
+          - {color: '#001F24', name: On Primary Container}
+          - {color: '#486367', name: Secondary}
+          - {color: '#CBE8ED', name: Secondary Container}
+          - {color: '#FFFFFF', name: On Secondary}
+          - {color: '#031F23', name: On Secondary Container}
+          - {color: '#515E80', name: Tertiary}
+          - {color: '#DAE2FF', name: Tertiary Container}
+          - {color: '#FFFFFF', name: On Tertiary}
+          - {color: '#0C1A39', name: On Tertiary Container}
+          - {color: '#BA1A1A', name: Error}
+          - {color: '#FAFDFD', name: Background}
+          - {color: '#FAFDFD', name: Surface}
+          - {color: '#191C1D', name: On Background}
+          - {color: '#191C1D', name: On Surface}
+          - {color: '#DBE4E6', name: Surface Variant}
+          - {color: '#3F484A', name: On Surface Variant}
+          - {color: '#6F797A', name: Outline}
+          - {color: 'rgba(25, 28, 29, 0.38)', name: On Disabled}
+          - {color: 'rgba(25, 28, 29, 0.12)', name: Disabled Container}
+          - {color: 'rgba(255, 255, 255, 0.08)', name: Light Overlay 1}
+          - {color: 'rgba(255, 255, 255, 0.12)', name: Light Overlay 2}
+          - {color: 'rgba(3, 31, 35, 0.08)', name: Dark Overlay 1}
+          - {color: 'rgba(3, 31, 35, 0.12)', name: Dark Overlay 2}
+          - {color: 'rgba(0, 104, 116, 0.05)', name: Primary Overlay 1}
+          - {color: 'rgba(0, 104, 116, 0.08)', name: Primary Overlay 2}
+          - {color: 'rgba(0, 104, 116, 0.11)', name: Primary Overlay 3}
+          name: Mykonos Light
+        - colors:
+          - {color: '#3CD9ED', name: Primary}
+          - {color: '#004F57', name: Primary Container}
+          - {color: '#00363D', name: On Primary}
+          - {color: '#96F0FF', name: On Primary Container}
+          - {color: '#AFCBD0', name: Secondary}
+          - {color: '#314B4F', name: Secondary Container}
+          - {color: '#1A3438', name: On Secondary}
+          - {color: '#CBE8ED', name: On Secondary Container}
+          - {color: '#B9C6ED', name: Tertiary}
+          - {color: '#394667', name: Tertiary Container}
+          - {color: '#23304F', name: On Tertiary}
+          - {color: '##DAE2FF', name: On Tertiary Container}
+          - {color: '#FFB4AB', name: Error}
+          - {color: '#191C1D', name: Background}
+          - {color: '#191C1D', name: Surface}
+          - {color: '#E1E3E3', name: On Background}
+          - {color: '#E1E3E3', name: On Surface}
+          - {color: '#3F484A', name: Surface Variant}
+          - {color: '#BFC8CA', name: On Surface Variant}
+          - {color: '#899294', name: Outline}
+          - {color: 'rgba(225, 227, 227, 0.38)', name: On Disabled}
+          - {color: 'rgba(225, 227, 227, 0.12)', name: Disabled Container}
+          - {color: 'rgba(203, 232, 237, 0.08)', name: Light Overlay 1}
+          - {color: 'rgba(203, 232, 237, 0.12)', name: Light Overlay 2}
+          - {color: 'rgba(203, 232, 237, 0.08)', name: Dark Overlay 1}
+          - {color: 'rgba(203, 232, 237, 0.12)', name: Dark Overlay 2}
+          - {color: 'rgba(60, 217, 237, 0.05)', name: Primary Overlay 1}
+          - {color: 'rgba(60, 217, 237, 0.08)', name: Primary Overlay 2}
+          - {color: 'rgba(60, 217, 237, 0.11)', name: Primary Overlay 3}
+          name: Mykonos Dark
+        - colors:
+          - {color: '#9A4523', name: Primary}
+          - {color: '#FFDBCF', name: Primary Container}
+          - {color: '#FFFFFF', name: On Primary}
+          - {color: '#380D00', name: On Primary Container}
+          - {color: '#77574C', name: Secondary}
+          - {color: '#FFDBCF', name: Secondary Container}
+          - {color: '#FFFFFF', name: On Secondary}
+          - {color: '#2C160D', name: On Secondary Container}
+          - {color: '#695E2F', name: Tertiary}
+          - {color: '#F2E2A7', name: Tertiary Container}
+          - {color: '#FFFFFF', name: On Tertiary}
+          - {color: '#221B00', name: On Tertiary Container}
+          - {color: '#BA1A1A', name: Error}
+          - {color: '#FFFBFF', name: Background}
+          - {color: '#FFFBFF', name: Surface}
+          - {color: '#201A18', name: On Background}
+          - {color: '#201A18', name: On Surface}
+          - {color: '#F5DED6', name: Surface Variant}
+          - {color: '#53433E', name: On Surface Variant}
+          - {color: '#85736D', name: Outline}
+          - {color: 'rgba(32, 26, 24, 0.38)', name: On Disabled}
+          - {color: 'rgba(32, 26, 24, 0.12)', name: Disabled Container}
+          - {color: 'rgba(255, 255, 255, 0.08)', name: Light Overlay 1}
+          - {color: 'rgba(255, 255, 255, 0.12)', name: Light Overlay 2}
+          - {color: 'rgba(44, 22, 13, 0.08)', name: Dark Overlay 1}
+          - {color: 'rgba(44, 22, 13, 0.12)', name: Dark Overlay 2}
+          - {color: 'rgba(154, 69, 35, 0.05)', name: Primary Overlay 1}
+          - {color: 'rgba(154, 69, 35, 0.08)', name: Primary Overlay 2}
+          - {color: 'rgba(154, 69, 35, 0.11)', name: Primary Overlay 3}
+          name: Manarola Light
+        - colors:
+          - {color: '#FFB59B', name: Primary}
+          - {color: '#7B2E0E', name: Primary Container}
+          - {color: '#5B1A00', name: On Primary}
+          - {color: '#FFDBCF', name: On Primary Container}
+          - {color: '#E7BDB0', name: Secondary}
+          - {color: '#5D4036', name: Secondary Container}
+          - {color: '#442A21', name: On Secondary}
+          - {color: '#FFDBCF', name: On Secondary Container}
+          - {color: '#D5C68E', name: Tertiary}
+          - {color: '#50461A', name: Tertiary Container}
+          - {color: '#393005', name: On Tertiary}
+          - {color: '#F2E2A7', name: On Tertiary Container}
+          - {color: '#FFB4AB', name: Error}
+          - {color: '#201A18', name: Background}
+          - {color: '#201A18', name: Surface}
+          - {color: '#EDE0DC', name: On Background}
+          - {color: '#EDE0DC', name: On Surface}
+          - {color: '#53433E', name: Surface Variant}
+          - {color: '#D8C2BB', name: On Surface Variant}
+          - {color: '#A08D86', name: Outline}
+          - {color: 'rgba(237, 224, 220, 0.38)', name: On Disabled}
+          - {color: 'rgba(237, 224, 220, 0.12)', name: Disabled Container}
+          - {color: 'rgba(255, 219, 207, 0.08)', name: Light Overlay 1}
+          - {color: 'rgba(255, 219, 207, 0.12)', name: Light Overlay 2}
+          - {color: 'rgba(255, 219, 207, 0.08)', name: Dark Overlay 1}
+          - {color: 'rgba(255, 219, 207, 0.12)', name: Dark Overlay 2}
+          - {color: 'rgba(255, 181, 155, 0.05)', name: Primary Overlay 1}
+          - {color: 'rgba(255, 181, 155, 0.08)', name: Primary Overlay 2}
+          - {color: 'rgba(255, 181, 155, 0.11)', name: Primary Overlay 3}
+          name: Manarola Dark
+    roles:
+    - components: [Label]
+      name: input-prompt
+    - components: [Link]
+      name: selected
+    - components: [ColumnPanel, LinearPanel, XYPanel, RepeatingPanel]
+      display_in_toolbox: true
+      name: outlined-card
+      title: Outlined Card
+    - components: [ColumnPanel, LinearPanel, XYPanel, RepeatingPanel]
+      display_in_toolbox: false
+      name: elevated-card
+      title: Elevated Card
+    - components: [ColumnPanel, LinearPanel, XYPanel, RepeatingPanel]
+      display_in_toolbox: false
+      name: tonal-card
+      title: Tonal Card
+    - components: [Button, FileLoader]
+      display_in_toolbox: true
+      name: outlined-button
+      title: Outlined Button
+    - components: [Button, FileLoader]
+      display_in_toolbox: false
+      name: filled-button
+      title: Filled Button
+    - components: [Button, FileLoader]
+      display_in_toolbox: false
+      name: elevated-button
+      title: Elevated Button
+    - components: [Button, FileLoader]
+      display_in_toolbox: false
+      name: tonal-button
+      title: Tonal Button
+    - components: [TextBox, TextArea, DatePicker, DropDown]
+      display_in_toolbox: true
+      name: outlined
+      title: Outlined TextBox
+    - components: [Label, Link]
+      name: display
+    - components: [Label, Link]
+      name: headline
+    - components: [Label, Link]
+      name: title
+    - components: [Label, Link]
+      name: body
+    - components: [DataGrid]
+      name: tonal-data-grid
+    - components: [TextBox, TextArea, DatePicker, DropDown]
+      name: outlined-error
+    - components: [TextBox, TextArea, DatePicker, DropDown]
+      name: input-error
+    - {components: null, name: italic}
+  templates:
+  - description: A page with an app bar and an optional sidebar.
+    form:
+      class_name: Form
+      code: "from ._anvil_designer import $NAME$Template\nfrom anvil import *\n\nclass $NAME$($NAME$Template):\n\n  def __init__(self, **properties):\n    # Set Form properties and Data Bindings.\n    self.init_components(**properties)\n\n    # Any code you write here will run before the form opens.\n    \n"
+      components:
+      - layout_properties: {slot: default}
+        name: content_panel
+        properties: {}
+        type: ColumnPanel
+      - layout_properties: {slot: nav-right}
+        name: navbar_links
+        properties: {}
+        type: FlowPanel
+      container:
+        properties: {html: '@theme:standard-page.html'}
+        type: HtmlTemplate
+      is_package: true
+    img: img/form-templates/material-design-3.png
+    name: Standard Page
